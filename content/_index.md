@@ -2,12 +2,11 @@
 title: ASTROSW
 ---
 
-## Table of contents
+## Table of Contents
 1.  [[image processing]]
-2.  [[particle physics/subatomic particles]]
+2. [[particle physics/subatomic particles|Particle Physics]]
 3. [[climate]]
 
-pls work
 
 
 
