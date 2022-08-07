@@ -9,15 +9,15 @@ enableCallouts: true
 enableSPA: true
 enableFooter: true
 enableContextualBacklinks: true
-enableRecentNotes: true
+enableRecentNotes: false
 enableGitHubEdit: false
-GitHubLink: https://github.com/astrosw/quartz/tree/hugo/content
+GitHubLink: https://github.com/thdngan/quartz/tree/hugo/content
 enableSemanticSearch: false
 operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
 description:
-  Ryan's personal blog.
+  Ryan's digital garden.
 page_title:
-  "ASTROSW"
+  "Ryan's Garden"
 links:
   - link_name: Instagram
     link: https://www.instagram.com/astrosw1113/

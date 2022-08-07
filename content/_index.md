@@ -8,5 +8,9 @@ title: ASTROSW
 3. [[climate]]
 
 
+# About
+
+Welcome to my [digital garden](https://maggieappleton.com/garden-history)! This is where I write down my thoughts, notes, discussions and personal projects... basically anything and everything.
+
 
 
