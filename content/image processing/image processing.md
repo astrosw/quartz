@@ -1,5 +1,5 @@
 ---
-title: "Recent Posts"
+title: "Image Processing"
 ---
 ## [[image processing/sampling and quantization|Sampling and Quantization in Image Processing]]
 
