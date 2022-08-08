@@ -8,6 +8,10 @@
     {{partial "header.html" .}}
     <img id="banner" src="https://thdngan.github.io/quartz/banner.svg" />
     <div class="bio">
+	    <article>
+            <p>Hello, I'm Ngân Trịnh. You can call me Ryan!</p>
+            <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
+        </article>
         <div class="writing-sidebar">
             <div class="delay t-3">
 	            {{partial "toc.html" .}}
@@ -16,10 +20,6 @@
 		        {{end}}
             </div>
         </div>
-        <article>
-            <p>Hello, I'm Ngân Trịnh. You can call me Ryan!</p>
-            <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
-        </article>
     </div>
     <div class="delay t-4">
         {{partial "footerIndex.html" .}}
