@@ -14,8 +14,11 @@
             <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
         </article>
         <div class="writing-sidebar">
-            <div class="delay t-4">
-	            {{partial "toc.html" .}}
+            <div class="delay t-3">
+	            {{partial "toc.html" . }}
+	            {{if $.Site.Data.config.enableRecentNotes}}
+          		{{partial "recent.html" . }}
+        		{{end}}
             </div>
             <div class="delay t-5">
 	            <h2>My topics</h2>
@@ -26,7 +29,7 @@
     </div>
 </div>
 <div class="delay t-5">
-        {{partial "footerIndex.html" .}}
+        {{partial "footer.html" . }}
 </div>
 </body>
 </html>

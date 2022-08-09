@@ -1,20 +1,32 @@
-{{if $.Site.Data.config.enableFooter}}
-  {{if $.Site.Data.graphConfig.enableGlobalGraph}}
-      <div class="page-end">
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head.html" . }}
 
-        <div>
-            {{partial "graph.html" .}}
-        </div>
-
-      </div>
-  {{else}}
-      <hr/>
-      <div class="page-end">
-        <div class="backlinks-container">
-            {{partial "graph.html" .}}
-        </div>
-      </div>
-  {{end}}
-{{end}}
-
-{{partial "contact.html" .}}
+<body>
+{{partial "search.html" .}}
+<div id="index" class="singlePage">
+    {{partial "header.html" .}}
+    <img id="banner" src="https://thdngan.github.io/quartz/banner.svg" />
+    <div class="bio">
+	    <article>
+            <p>Hello, I'm Ngân Trịnh.</p>
+            <p class="delay t-2"> You can call me Ryan!
+            <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
+        </article>
+        <div class="writing-sidebar">
+            <div class="delay t-2">
+	            {{partial "toc.html" . }}
+            </div>
+            <div class="delay t-5">
+	            <h2>My topics</h2>
+	            <p>1. <a href="https://thdngan.github.io/quartz/image-processing/image-processing">Image Processing</a></p>
+	            <p>2. <a href="https://thdngan.github.io/quartz/particle-physics/subatomic-particles">Particle Physics</a></p>
+	            <p>3. Climate</p>
+	        </div>
+    </div>
+</div>
+<div class="delay t-5">
+        {{partial "footerIndex.html" . }}
+</div>
+</body>
+</html>
