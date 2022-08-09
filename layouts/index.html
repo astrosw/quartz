@@ -14,13 +14,13 @@
             <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
         </article>
         <div class="writing-sidebar">
-            <div class="delay t-4">
+            <div class="delay t-3">
 	            {{partial "toc.html" .}}
 	            {{if $.Site.Data.config.enableRecentNotes}}
 		                {{partial "recent.html" . }}
 		        {{end}}
             </div>
-            <div class="delay t-5">
+            <div class="delay t-3">
 	            <h2>My topics</h2>
 	            <p>1. <a href="https://thdngan.github.io/quartz/image-processing/image-processing">Image Processing</a></p>
 	            <p>2. <a href="https://thdngan.github.io/quartz/particle-physics/subatomic-particles">Particle Physics</a></p>
@@ -28,7 +28,7 @@
 	        </div>
     </div>
 </div>
-<div class="delay t-5">
+<div class="delay t-4">
         {{partial "footerIndex.html" .}}
 </div>
 </body>
