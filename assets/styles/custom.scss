@@ -1,28 +1,28 @@
 // Add your own CSS here!
 
 :root {
-  --light: #fff8e7; //faf8f8, light mode background
-  --dark: #000500; //141021, headings 2c3531
-  --secondary: #576653; //284b63, internal links and nodes
-  --tertiary: #72a276; //84a59d, internal links when hover mouse
-  --visited: #afbfc9; //afbfc9, other nodes when a node was hovered
-  --primary: #d64933; //primary node f28482
-  --gray: #4e4e4e; //4e4e4e, text
-  --lightgray: #f0f0f0; // background of search bar, f0f0f0
-  --outlinegray: #dadada; // outlines (graph, backlinks and links) dadada
+  --light: #fff8e7;
+  --dark: #000500; 
+  --secondary: #576653;
+  --tertiary: #72a276; 
+  --visited: #afbfc9; 
+  --primary: #d64933; 
+  --gray: #4e4e4e; 
+  --lightgray: #f0f0f0; 
+  --outlinegray: #dadada; 
   --million-progress-bar-color: var(--secondary);
 }
 
 [saved-theme="dark"] {
-  --light: #22241b !important; //1e1e21, dark mode background 182628
-  --dark: #fbfffe !important; //fbfffe, headings
-  --secondary: #73876d !important; //6b879a, internal links and nodes
-  --visited: #666b6a !important; //4a575e, other nodes when a node was hovered
-  --tertiary: #72a276 !important; //internal link text when hover mouse
-  --primary: #f58382 !important; //primary node
-  --gray: #d4d4d4 !important; //text
-  --lightgray: #414535 !important; //292633
-  --outlinegray: #343434 !important; //343434
+  --light: #22241b !important; 
+  --dark: #fbfffe !important;
+  --secondary: #73876d !important; 
+  --visited: #666b6a !important; 
+  --tertiary: #72a276 !important; 
+  --primary: #f58382 !important;
+  --gray: #d4d4d4 !important;
+  --lightgray: #414535 !important; 
+  --outlinegray: #343434 !important;
 }
 
 #banner {
