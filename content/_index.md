@@ -5,9 +5,9 @@ Welcome to my [digital garden](https://nesslabs.com/digital-garden-set-up#:~:tex
 
 ## Why this place?
 
-I started writing blogs using many platforms for a while, but I couldn't settle on one to use consistently. I once decided to write about a [[neutrino application]] and quickly realized that it is difficult to sum up the neutrino concept in a few words due to its interconnection with so many other particle physics ideas. Usually, using evergreen notes with bi-directional links makes most of them easier to understand. I therefore took a look at my [Obsidian](https://obsidian.md/) notes and reasoned, "Why not publish them and use them for my posts?"
+I had been writing blogs using many platforms for a while, but I couldn't settle on one to use consistently. I once decided to write about a [[neutrino application]] and quickly realized that it is difficult to sum up the neutrino concept in a few words due to its interconnection with so many other particle physics ideas. I figured that using evergreen notes with bi-directional links would make most of them easier to understand. So I took a look at my [Obsidian](https://obsidian.md/) notes and thought, "Why not publish them and use them for my posts?"
 
-I've had a lot of fun setting up my own garden (and a little headache because I was new to all of this haha). Many thanks to [Jacky Zhao](https://jzhao.xyz/) for creating this incredible tool!
+I've had a lot of fun setting up my own garden (and a little headache because I'm new to all of this haha). Many thanks to [Jacky Zhao](https://jzhao.xyz/) for creating this incredible tool!
 
 ## How to navigate
 
