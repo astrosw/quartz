@@ -9,7 +9,8 @@
     <img id="banner" src="https://thdngan.github.io/quartz/banner.svg" />
     <div class="bio">
 	    <article>
-            <p>Hello, I'm Ngân Trịnh. You can call me Ryan!</p>
+            <p>Hello, I'm Ngân Trịnh.</p>
+            <p class="delay t-1"> You can call me Ryan!
             <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
         </article>
         <div class="writing-sidebar">
@@ -19,11 +20,16 @@
 		                {{partial "recent.html" . }}
 		        {{end}}
             </div>
-        </div>
+            <div class="delay t-3">
+	            <h2>My topics</h2>
+	            <p>1. <a href="https://thdngan.github.io/quartz/image-processing/image-processing">Image Processing</a></p>
+	            <p>2. <a href="https://thdngan.github.io/quartz/particle-physics/subatomic-particles">Particle Physics</a></p>
+	            <p>3. Climate</p>
+	        </div>
     </div>
-    <div class="delay t-4">
+</div>
+<div class="delay t-4">
         {{partial "footerIndex.html" .}}
-    </div>
 </div>
 </body>
 </html>
