@@ -1,28 +1,28 @@
 // Add your own CSS here!
 
 :root {
-  --light: #faf8f8; //faf8f8
-  --dark: #141021; //141021
-  --secondary: #284b63; //284b63
-  --tertiary: #84a59d; //84a59d
-  --visited: #afbfc9; //afbfc9
-  --primary: #f28482; //primary node f28482
-  --gray: #4e4e4e; //link 4e4e4e
-  --lightgray: #f0f0f0; //no idea, maybe still link? f0f0f0
-  --outlinegray: #dadada; // still no idea, link? dadada
+  --light: #fff8e7; //faf8f8, light mode background
+  --dark: #000500; //141021, headings 2c3531
+  --secondary: #667761; //284b63, internal links and nodes
+  --tertiary: #72a276; //84a59d, internal links when hover mouse
+  --visited: #afbfc9; //afbfc9, other nodes when a node was hovered
+  --primary: #d64933; //primary node f28482
+  --gray: #4e4e4e; //4e4e4e, text
+  --lightgray: #f0f0f0; // background of search bar, f0f0f0
+  --outlinegray: #dadada; // outlines (graph, backlinks and links) dadada
   --million-progress-bar-color: var(--secondary);
 }
 
 [saved-theme="dark"] {
-  --light: #1e1e21 !important; //1e1e21
-  --dark: #fbfffe !important; //fbfffe
-  --secondary: #6b879a !important; //6b879a, text, titles
-  --visited: #4a575e !important; //4a575e, highlight of internal links text
-  --tertiary: #84a59d !important; //84a59d, internal link text when hover mouse
+  --light: #22241b !important; //1e1e21, dark mode background 182628
+  --dark: #fbfffe !important; //fbfffe, headings
+  --secondary: #73876d !important; //6b879a, internal links and nodes
+  --visited: #666b6a !important; //4a575e, other nodes when a node was hovered
+  --tertiary: #72a276 !important; //84a59d, internal link text when hover mouse
   --primary: #f58382 !important; //f58382, primary node
-  --gray: #d4d4d4 !important; //d4d4d4, gray, probably background of search tool in light mode
-  --lightgray: #292633 !important; //292633, dark purple, background of search tool in dark mode
-  --outlinegray: #343434 !important; //343434
+  --gray: #d4d4d4 !important; //d4d4d4, text
+  --lightgray: #414535 !important; //292633, background of search tool in dark mode
+  --outlinegray: #343434 !important; //lines, 343434
 }
 
 #banner {
