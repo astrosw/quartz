@@ -10,15 +10,12 @@
     <div class="bio">
 	    <article>
             <p>Hello, I'm Ngân Trịnh.</p>
-            <p class="delay t-1"> You can call me Ryan!
+            <p class="delay t-2"> You can call me Ryan!
             <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
         </article>
         <div class="writing-sidebar">
             <div class="delay t-4">
 	            {{partial "toc.html" .}}
-	            {{if $.Site.Data.config.enableRecentNotes}}
-		                {{partial "recent.html" . }}
-		        {{end}}
             </div>
             <div class="delay t-5">
 	            <h2>My topics</h2>
