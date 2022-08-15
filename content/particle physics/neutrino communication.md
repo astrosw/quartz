@@ -48,7 +48,7 @@ There are several ways to answer this.
 You can use the following formula to calculate the number of particles left (N) after traveling a distance (x):
 
 <p align="center">N = N<sub>0</sub>e<sup>-σρx</sup></p>
-, where N<sub>0</sub> is the initial number of particles, σ is the interaction cross section and ρ is the density of matter which the particle pass through.
+where N<sub>0</sub> is the initial number of particles, σ is the interaction cross section and ρ is the density of matter which the particle pass through.
 
 So when the particle is a neutrino, we all know that the cross section is very small, about 10<sup>-38</sup> cm<sup>2</sup>/GeV. For the density, we can take the standard density of rock, which is 2.65 g/cm<sup>3</sup>, and x would be 9600km. So the reduction should be really really small, even if the path length is very long and the neutrino energy is very high.
 
@@ -61,7 +61,7 @@ This is a plot that shows the neutrino attenuation during propagation through th
 We can also calculate the neutrino survival probability by ourselves using this formula:
 
 <p align="center">P<sub>surv</sub>=e<sup>-N<sub>A</sub>σ<sub>E<sub>nu</sub></sub>X</sup></p>
-, where N<sub>A</sub> is the Avogadro constant, σ<sub>E<sub>nu</sub></sub> is the total neutrino cross sectrion at energy E<sub>nu</sub>, and X is the slant depth in meters water equivalent. To calculate the slant depth you can use a density model of the Earth like [this](https://de.wikipedia.org/wiki/PREM).
+where N<sub>A</sub> is the Avogadro constant, σ<sub>E<sub>nu</sub></sub> is the total neutrino cross sectrion at energy E<sub>nu</sub>, and X is the slant depth in meters water equivalent. To calculate the slant depth you can use a density model of the Earth like [this](https://de.wikipedia.org/wiki/PREM).
 
 Regarding the neutrino oscillations, at ~100 GeV energies neutrino oscillations can change the flavour of our neutrino beam. But most likely our neutrino detector will be able to detect all neutrino flavours. So if the idea of communication is similar to the past experiment using NuMI beam line and MINERvA detector (encoding communication bits by the neutrino beam being either on or off), I think the flavour composition of the neutrino beam should not be relevant.
 
