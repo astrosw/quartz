@@ -1,7 +1,7 @@
 ---
 title: "leptons"
 ---
-A lepton is an elementary particle with spin 1/2 that does not interact strongly ([[particle physics/strong interactions]])
+A lepton is an elementary particle with spin 1/2 that does not interact strongly ([[particle physics/strong interactions|strong interactions]])
 
 Two main types of leptons:
 - charged leptons: [[particle physics/electrons|electrons]] (first generation), [[particle physics/muons|muons]] (second generation), [[particle physics/tauons|tauons]] (third generation)
