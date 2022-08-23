@@ -14,8 +14,13 @@
             <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
         </article>
         <div class="writing-sidebar">
-            <div class="delay t-2">
-	            {{partial "toc.html" . }}
+            <div class="delay t-3">
+	            <aside class="mainTOC">
+    <details {{ if $.Site.Data.config.openToc }}open {{ end }}>
+        <summary>Table of Contents</summary>
+        {{ .TableOfContents }}
+    </details>
+</aside>
             </div>
             <div class="delay t-5">
 	            <h2>My topics</h2>
@@ -23,9 +28,30 @@
 	            <p>2. <a href="https://thdngan.github.io/quartz/particle-physics/subatomic-particles">Particle Physics</a></p>
 	            <p>3. Climate</p>
 	        </div>
+	        <div class="delay t-5">
+                <h2>Recent Writing</h2>
+                {{$writing := where .Site.RegularPages "Section" "posts" }}
+                <ul class="delay stagger">
+                    {{range first 3 $writing }}
+                    <li>
+                        <div class="section">
+                            <div class="desc">
+                                <h3><a href="{{ .Permalink }}">{{- .Title -}}</a></h3>
+                            </div>
+                            <p class="meta">
+                            {{.WordCount}} words on {{partial "date-fmt.html" .}} 
+                            </p>
+                            {{partial "tags.html" .}}
+                        </div>
+                    </li>
+                    {{end}}
+                </ul>
+                <a href="/posts">See {{sub (len $writing) 3}} more →</a>
+            </div>
     </div>
 </div>
 <div class="delay t-5">
+<hr/>
         {{partial "footerIndex.html" . }}
 </div>
 </body>
