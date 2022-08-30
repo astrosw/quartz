@@ -1,7 +1,7 @@
 ---
 title: "neutrinos"
 ---
-Neutrinos are [fermions](https://astrosw.github.io/quartz/particle-physics/fermions) that only interact through [[particle physics/weak interactions|weak interactions]] and [[particle physics/gravity|gravity]].
+Neutrinos are [fermions](https://astrosw.github.io/quartz/particle-physics/fermions) that only interact through [[notes/weak interactions|weak interactions]] and [[notes/gravity|gravity]].
 
 They are electrically neutral and have very small rest mass.
 

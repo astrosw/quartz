@@ -2,7 +2,7 @@
 title: "composite particles"
 ---
 Include:
-- [[particle physics/hadrons|hadrons]]
+- [[notes/hadrons|hadrons]]
 - [[atomic nuclei]]
 - [[atoms]]
 - [[molecules]]

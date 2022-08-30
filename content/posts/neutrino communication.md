@@ -6,13 +6,13 @@ title: "Neutrino-based Communication: From New York to Tokyo, through the Earth!
 
 ***DISCLAIMER:*** *Particle Physics is not my area of study. Please let me know if you notice any mistakes or omissions.*
 
-In this post, I'll discuss the possibility of using [[particle physics/neutrinos|neutrinos]] for communication between New York and Tokyo and answer the questions: What can we gain with neutrino-based communication in comparison to the conventional communications? What's the most challenging for developing this kind of communication?
+In this post, I'll discuss the possibility of using [[notes/neutrinos|neutrinos]] for communication between New York and Tokyo and answer the questions: What can we gain with neutrino-based communication in comparison to the conventional communications? What's the most challenging for developing this kind of communication?
 
 Of course in order to discuss all that, we need to grasp the basic concepts. The first question is undoubtedly:
 
 ## What are neutrinos?
 
-Basically they are elementary particles that have neutral charge and very VERY small mass (thought to be massless for a long time). They are [[particle physics/fermions|fermions]] that interact only via the [[particle physics/weak interactions|weak interactions]] and [[particle physics/gravity|gravity]].
+Basically they are elementary particles that have neutral charge and very VERY small mass (thought to be massless for a long time). They are [[notes/fermions|fermions]] that interact only via the [[notes/weak interactions|weak interactions]] and [[notes/gravity|gravity]].
 
 *Well, I do realize the above explanation is still a little vague for those who are unfamiliar with particle physics (like me). Like okay, they're fermions, but what are fermions? What exactly are elementary particles? Where do they exist in atoms, and how do they connect with other particles that we are more familiar with, such as electrons, protons, and neutrons? And so i decided to set up this site to utiliize the power of bidirectional links. You can move to the individual notes of each concept by clicking on the internal links, or you can look at how these are connected in the interactive graph at the bottom.*
 
@@ -47,7 +47,7 @@ There are several ways to answer this.
 
 You can use the following formula to calculate the number of particles left (N) after traveling a distance (x):
 
-<p align="center">N = N<sub>0</sub>e<sup>-σρx</sup></p>
+ 
 
 where N<sub>0</sub> is the initial number of particles, σ is the interaction cross section and ρ is the density of matter which the particle pass through.
 
