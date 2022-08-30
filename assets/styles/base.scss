@@ -1,9 +1,9 @@
-// Replace this with your own font imports! wght@400;600;700
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Newsreader:opsz,wght@6..72,400;6..72,700&family=Spectral:wght@400;600&display=swap');
+// Replace this with your own font imports! wght@400;600;700    opsz,wght@6..72,400;6..72,700
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Slab:wght@400;600;700&family=Noto+Serif:wght@400;600&display=swap');
 :root {
-  --font-body: "Spectral";
-  --font-header: "Newsreader";
-  --font-mono: "JetBrains Mono"
+  --font-body: "Noto Serif";
+  --font-header: "Roboto Slab";
+  --font-mono: "Space Mono"
 }
 
 // typography
