@@ -2,5 +2,5 @@
 title: "My topics"
 ---
 1. [[subjects/image processing|Image Processing]]
-2. [[subatomic particles|Particle Physics]]
-3. [[subjects/climate|climate]]
+2. [[notes/subatomic particles|Particle Physics]]
+4. [[subjects/climate|climate]]
