@@ -1,5 +1,8 @@
 ---
-title: "[My Notebooks] First Climate Model"
+title: "First Climate Model"
+date: 2022-08-30
+tags:
+- notebook
 ---
 *My notebook for the Coursera course: **Global Warming I: The Science and Modeling of Climate Change***
 

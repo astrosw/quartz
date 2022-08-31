@@ -1,6 +1,11 @@
 ---
 title: "Heat"
+date: 2022-06-25
+tags:
+- notebook
 ---
+
+
 Heat is an expression of the amount of kinetic energy that the atoms in a substance has.
 
 In thermodynamics, heat is energy in transfer to or from a thermodynamic system, by mechanisms other than thermodynamic work or transfer of matter (e.g. radiation, conduction, convection).

@@ -1,19 +1,24 @@
 // Replace this with your own font imports! wght@400;600;700    opsz,wght@6..72,400;6..72,700
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Slab:wght@400;600;700&family=Noto+Serif:wght@400;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Libre+Baskerville:wght@400;600;700&family=Mukta:wght@400;600&display=swap');
+
 :root {
-  --font-body: "Noto Serif";
-  --font-header: "Roboto Slab";
-  --font-mono: "Space Mono"
+  --font-body: "Mukta";
+  --font-header: "Libre Baskerville";
+  --font-mono: "JetBrains Mono"
 }
 
 // typography
 html {
   scroll-behavior: smooth;
   &:lang(ar) {
-    & p, & h1, & h2, & h3, article {
+    & p, & h1, & h2, & h3, article, header {
       direction: rtl;
       text-align: right;
     }
+  }
+  & footer > p {
+    text-align: center !important;
   }
 }
 
@@ -27,10 +32,11 @@ html {
 
 body {
   margin: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   max-width: 100%;
   box-sizing: border-box;
+  position: relative;
   background-color: var(--light);
 }
 
@@ -53,7 +59,7 @@ h1, h2, h3, h4, h5, h6, thead {
   color: var(--dark);
 }
 
-p, ul, text, a, tr, td, li, ol, ul {
+p, ul, text, tr, td, li, ol, ul {
   font-family: var(--font-body);
   color: var(--gray);
   fill: var(--gray);
@@ -87,7 +93,7 @@ tbody, li, p {
 #TableOfContents > ol {
   counter-reset: section;
   margin-left: 0em;
-  padding-left: 1.5em;
+  padding-left: 1em;
   & > li {
     counter-increment: section;
     & > ol {
@@ -224,17 +230,16 @@ article {
 
   & > li {
     display: inline-block;
-    margin: 0.4em 0;
+    margin: 0.4em 0.2em;
   }
 
   & > li > a {
     border-radius: 8px;
     border: var(--outlinegray) 1px solid;
-    padding: 0.2em 0.5em;
+    padding: 0.1em 0.5em;
     &::before {
       content: "#";
       margin-right: 0.3em;
-      color: var(--outlinegray);
     }
   }
 }
@@ -260,7 +265,7 @@ a {
   font-size: 1em;
   font-weight: 700;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: color 0.2s ease;
   color: var(--secondary);
   &:hover {
     color: var(--tertiary) !important;
@@ -506,14 +511,14 @@ header {
 
   & > .section {
     display: flex;
-    align-items: center; 
+    align-items: center;
 
     @media all and (max-width: 600px) {
       & .tags {
         display: none;
       }
     }
-
+    
     & h3 > a {
       font-weight: 700;
       margin: 0;
@@ -522,7 +527,7 @@ header {
     & p {
       margin: 0;
       padding-right: 1em;
-      flex-basis: 6em; 
+      width: clamp(6em, 6em, 6em); 
     }
   }
 
@@ -592,9 +597,13 @@ header {
     font-size: 0.8rem;
   }
 
+  & > p {
+    margin: 0;
+    padding: 0.5rem 0;
+  } 
+
   & > p, & > a {
     font-size: 1rem;
-    margin: 0.7rem 0;
     font-weight: 400;
     user-select: none;
   }

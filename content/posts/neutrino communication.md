@@ -1,5 +1,8 @@
 ---
-title: "Neutrino-based Communication: From New York to Tokyo, through the Earth!"
+title: "Neutrino-based Communication"
+date: 2022-08-05
+tags:
+- discussion
 ---
 
 (still writing...)
