@@ -13,7 +13,7 @@ I've had a lot of fun setting up my own garden (and a little headache because I'
 
 ## How to navigate
 
-The best part about this digital garden is that you can simply move from note to note by clicking on internal links on each page or on the nodes of the interactive graph at the bottom. You can also use the search tool at the top to look for pages and keywords.
+The best part about this digital garden is that you can simply move from note to note by clicking on internal links on each page or on the nodes of the interactive graph at the bottom. You can also use the search tool at the top (or Ctrl + K) to look for pages and keywords.
 
 
 
