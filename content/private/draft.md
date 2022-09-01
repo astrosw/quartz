@@ -37,8 +37,9 @@
             </div>
     </div>
 	    <article>
-            <p><blockquote>One could say, in fact, that no story really has a beginning, and that no story really has an end, as all of the world's stories are as jumbled as the items in the arboretum, with their details and secrets all heaped together so that the whole story, from beginning to end, depends on how you look at it.</blockquote></p>
-            <p class="delay t-2"> &mdash; Lemony Snicket, The End
+            <p><blockquote>One could say, in fact, that no story really has a beginning, and that no story really has an end, as all of the world's stories are as jumbled as the items in the arboretum, with their details and secrets all heaped together so that the whole story, from beginning to end, depends on how you look at it.
+            &mdash;Lemony Snicket, The End</blockquote></p>
+            <p class="delay t-2"> You can call me Ryan!
             <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
         </article>
 </div>

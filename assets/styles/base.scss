@@ -12,7 +12,7 @@
 html {
   scroll-behavior: smooth;
   &:lang(ar) {
-    & p, & h1, & h2, & h3, article, header {
+    & p, & h1, & h2, & h3, & blockquote, article, header {
       direction: rtl;
       text-align: right;
     }
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, thead {
   color: var(--dark);
 }
 
-p, ul, text, tr, td, li, ol, ul {
+p, ul, text, tr, td, li, ol, ul , blockquote{
   font-family: var(--font-body);
   color: var(--gray);
   fill: var(--gray);
