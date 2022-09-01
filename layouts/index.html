@@ -8,21 +8,8 @@
     {{partial "header.html" .}}
     <img id="banner" src="https://thdngan.github.io/quartz/banner.svg" />
     <div class="bio">
-	    <article>
-            <p>Hello, I'm Ngân Trịnh.</p>
-            <p class="delay t-2"> You can call me Ryan!
-            <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
-        </article>
-        <div class="writing-sidebar">
+       <div class="writing-sidebar">
             <div class="delay t-3">
-	            <aside class="mainTOC">
-    <details {{ if $.Site.Data.config.openToc }}open {{ end }}>
-        <summary>Table of Contents</summary>
-        {{ .TableOfContents }}
-    </details>
-</aside>
-            </div>
-            <div class="delay t-4">
 	            <h2>My topics</h2>
 	            <p>1. <a href="https://thdngan.github.io/quartz/subjects/image-processing">Image Processing</a></p>
 	            <p>2. <a href="https://thdngan.github.io/quartz/notes/subatomic-particles">Particle Physics</a></p>
@@ -32,7 +19,7 @@
                 <h2>Recent Posts</h2>
                 {{$writing := where .Site.RegularPages "Section" "posts" }}
                 <ul class="delay stagger">
-                    {{range first 3 $writing }}
+                    {{range first 4 $writing }}
                     <li>
                         <div class="section">
                             <div class="desc">
@@ -49,6 +36,11 @@
                 <a href="/quartz/posts">See {{sub (len $writing) 3}} more →</a>
             </div>
     </div>
+	    <article>
+            <p>Hello, I'm Ngân Trịnh.</p>
+            <p class="delay t-2"> You can call me Ryan!
+            <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
+        </article>
 </div>
 <div class="delay t-5">
 <hr/>

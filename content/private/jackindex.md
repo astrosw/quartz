@@ -8,28 +8,15 @@
     {{partial "header.html" .}}
     <img id="banner" src="https://thdngan.github.io/quartz/banner.svg" />
     <div class="bio">
-	    <article>
-            <p>Hello, I'm Ngân Trịnh.</p>
-            <p class="delay t-2"> You can call me Ryan!
-            <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
-        </article>
-        <div class="writing-sidebar">
-            <div class="delay t-3">
-	            <aside class="mainTOC">
-    <details {{ if $.Site.Data.config.openToc }}open {{ end }}>
-        <summary>Table of Contents</summary>
-        {{ .TableOfContents }}
-    </details>
-</aside>
-            </div>
-            <div class="delay t-5">
+       <div class="writing-sidebar">
+            <div class="delay t-4">
 	            <h2>My topics</h2>
-	            <p>1. <a href="https://thdngan.github.io/quartz/image-processing/image-processing">Image Processing</a></p>
-	            <p>2. <a href="https://thdngan.github.io/quartz/particle-physics/subatomic-particles">Particle Physics</a></p>
-	            <p>3. <a href="https://thdngan.github.io/quartz/climate/climate/">Climate</a></p>
+	            <p>1. <a href="https://thdngan.github.io/quartz/subjects/image-processing">Image Processing</a></p>
+	            <p>2. <a href="https://thdngan.github.io/quartz/notes/subatomic-particles">Particle Physics</a></p>
+	            <p>3. <a href="https://thdngan.github.io/quartz/subjects/climate/">Climate</a></p>
 	        </div>
-	        <div class="delay t-5">
-                <h2>Recent Writing</h2>
+	        <div class="delay t-4">
+                <h2>Recent Posts</h2>
                 {{$writing := where .Site.RegularPages "Section" "posts" }}
                 <ul class="delay stagger">
                     {{range first 3 $writing }}
@@ -46,9 +33,14 @@
                     </li>
                     {{end}}
                 </ul>
-                <a href="/posts">See {{sub (len $writing) 3}} more →</a>
+                <a href="/quartz/posts">See {{sub (len $writing) 3}} more →</a>
             </div>
     </div>
+	    <article>
+            <p>Hello, I'm Ngân Trịnh.</p>
+            <p class="delay t-2"> You can call me Ryan!
+            <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
+        </article>
 </div>
 <div class="delay t-5">
 <hr/>
