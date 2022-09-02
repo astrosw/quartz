@@ -29,7 +29,7 @@ A colored image is made up of many colors, almost all of which can be generated 
 
 To represent the intensity (shades of red, green, and blue) in a pixel, each of the small squares would have values ranging from 0 to 255. Then, all of these matrices (channels) are superimposed so that the final image has the value NxMx3, where N and M are the number of rows and columns, respectively, and 3 represents the number of channels. For example, if each matrix has 6 rows and 5 columns, the image value is 6x5x3.
 
-Most high-end cameras capture full 2-dimensional rays for each color, whereas most low-end to mid-end consumer cameras do something slightly different called mosaic. The basic idea is to capture the pixels with color interleaving (I'll go over this in more detail in another post).
+Most high-end cameras capture full 2-dimensional rays for each color, whereas most low-end to mid-end consumer cameras do something slightly different called [[notes/mosaic|mosaic]]. The basic idea is to capture the pixels with color interleaving (I'll go over this in more detail in another post).
 
 ## Videos
 
