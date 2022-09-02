@@ -6,7 +6,7 @@ tags:
 - climate
 ---
 
-*My notebook for the Coursera course: **Global Warming I: The Science and Modeling of Climate Change***.
+*My notebook for the Coursera course: **Global Warming I: The Science and Modeling of Climate Change**, The University of Chicago.*
 
 ## What is heat?
 Heat is defined in thermodynamics as energy transferred to or from a thermodynamic system by methods other than thermodynamic work or matter transfer (e.g. radiation, conduction, convection).
