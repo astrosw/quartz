@@ -1,5 +1,9 @@
 ---
 title: "fermions"
+date: 2022-08-30
+tags:
+- note
+- particle physics
 ---
 A particle that has a half-odd-integer spin (spin 1/2, spin 3/2, etc.)
 

@@ -1,5 +1,9 @@
 ---
 title: "neutrinos"
+date: 2022-08-30
+tags:
+- note
+- particle physics
 ---
 Neutrinos are [fermions](https://astrosw.github.io/quartz/particle-physics/fermions) that only interact through [[notes/weak interactions|weak interactions]] and [[notes/gravity|gravity]].
 
