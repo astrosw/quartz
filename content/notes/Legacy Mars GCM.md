@@ -1,6 +1,11 @@
 ---
 title: "Legacy Mars Global Climate Model"
+date: 2022-08-30
+tags:
+- climate
 ---
+
+
 ```
 % sudo apt install gfortran
 % git clone https://github.com/nasa/legacy-mars-global-climate-model.git
