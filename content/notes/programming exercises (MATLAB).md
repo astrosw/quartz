@@ -1,6 +1,6 @@
 ---
 title: "Programming Exercises (MATLAB)"
-date: 2022-08-30
+date: 2022-08-02
 tags:
 - image processing
 ---

@@ -1,6 +1,5 @@
 ---
-title: "Posts in Particle Physics"
-date: 2022-08-30
+title: "Particle Physics"
 ---
 
 ## [[posts/neutrino communication|Neutrino-based Communication]]

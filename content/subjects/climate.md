@@ -1,5 +1,5 @@
 ---
-title: "Posts in Climate"
+title: "Climate"
 ---
 ## [[notes/Legacy Mars GCM|Legacy Mars Global Climate Model]]
 

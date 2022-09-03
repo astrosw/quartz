@@ -11,10 +11,20 @@
        <div class="writing-sidebar">
             <div class="delay t-3">
 	            <h2>My topics</h2>
-	            <p>1. <a href="https://thdngan.github.io/quartz/subjects/image-processing">Image Processing</a></p>
-	            <p>2. <a href="https://thdngan.github.io/quartz/subjects/particle-physics">Particle Physics</a></p>
-	            <p>3. <a href="https://thdngan.github.io/quartz/subjects/climate">Climate</a></p>
-	            <p>4. Projects</p>
+	            {{$topics := where .Site.RegularPages "Section" "subjects" }}
+                <ul class="delay stagger">
+                    {{range first 8 $topics }}
+                    <ul>
+	                    <li>
+                        <div class="section">
+                            <div class="desc">
+                                <h4>&#8226; <a href="{{ .Permalink }}">{{- .Title -}}</a></h4>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                    {{end}}
+                </ul>
 	        </div>
 	        <div class="delay t-4">
                 <h2>Recent Posts</h2>

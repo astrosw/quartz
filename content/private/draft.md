@@ -11,9 +11,20 @@
        <div class="writing-sidebar">
             <div class="delay t-3">
 	            <h2>My topics</h2>
-	            <p>1. <a href="https://thdngan.github.io/quartz/subjects/image-processing">Image Processing</a></p>
-	            <p>2. <a href="https://thdngan.github.io/quartz/notes/subatomic-particles">Particle Physics</a></p>
-	            <p>3. <a href="https://thdngan.github.io/quartz/subjects/climate/">Climate</a></p>
+	            {{$topics := where .Site.RegularPages "Section" "subjects" }}
+                <ul class="delay stagger">
+                    {{range first 8 $topics }}
+                    <ol>
+	                    <li>
+                        <div class="section">
+                            <div class="desc">
+                                <h3><a href="{{ .Permalink }}">{{- .Title -}}</a></h3>
+                            </div>
+                        </div>
+                    </li>
+                    </ol>
+                    {{end}}
+                </ul>
 	        </div>
 	        <div class="delay t-4">
                 <h2>Recent Posts</h2>
@@ -37,9 +48,8 @@
             </div>
     </div>
 	    <article>
-            <p><blockquote>One could say, in fact, that no story really has a beginning, and that no story really has an end, as all of the world's stories are as jumbled as the items in the arboretum, with their details and secrets all heaped together so that the whole story, from beginning to end, depends on how you look at it.
-            &mdash;Lemony Snicket, The End</blockquote></p>
-            <p class="delay t-2"> You can call me Ryan!
+            <p><blockquote>One could say, in fact, that no story really has a beginning, and that no story really has an end, as all of the world's stories are as jumbled as the items in the arboretum, with their details and secrets all heaped together so that the whole story, from beginning to end, depends on how you look at it.</blockquote></p>
+            <p class="delay t-2"> &mdash; Lemony Snicket, The End
             <div class="delay stagger">{{partial "textprocessing.html" . }}</div>
         </article>
 </div>

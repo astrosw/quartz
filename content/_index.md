@@ -5,15 +5,15 @@ Hello there, I'm Ryan. Welcome to my [digital arboretum](https://nesslabs.com/di
 
 *I know the penguins seem out of place given the whole gardening theme, but heyyy aren't they adorable? They are my own drawings!*
 
+## How to navigate
+
+You can simply move from note to note by clicking on internal links on each page or on the nodes of the interactive graph at the bottom. You can also use the search tool at the top (or Ctrl + K) to look for pages and keywords. Alternatively, you may look at a list of my [[my topics|topics here]] or click on tags to look for notes in the same categories.
+
 ## Why this place?
 
 I wrote blogs across a variety of platforms for a while, but I couldn't settle on one to use consistently. I once decided to write about a [[posts/neutrino communication|neutrino application]] and soon realized that the neutrino concept would be simpler to grasp using bidirectional links due to its interconnection with so many other particle physics concepts. So I thought, "Why not publish my [Obsidian](https://obsidian.md/) notes and utilize them for my blogs?"
 
 I've had a lot of fun setting up my own garden (and a little headache because I'm new to all of this haha). Many thanks to Jacky Zhao for creating this incredible [tool](https://github.com/jackyzha0/quartz)!
-
-## How to navigate
-
-The best part about this digital garden is that you can simply move from note to note by clicking on internal links on each page or on the nodes of the interactive graph at the bottom. You can also use the search tool at the top (or Ctrl + K) to look for pages and keywords. Alternatively, you may look at a list of my [[my topics|topics here]].
 
 
 
