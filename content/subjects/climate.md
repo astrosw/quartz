@@ -3,7 +3,7 @@ title: "Climate Modeling"
 ---
 ## [[notes/Legacy Mars GCM|Legacy Mars Global Climate Model]]
 
-## [[private/first climate models|First Climate Model]]
+## [[posts/naked planet climate model|First Climate Model]]
 
 ## [[posts/heat|What is heat and how can you warm up something in space]]
 <br></br>
