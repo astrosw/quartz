@@ -21,7 +21,7 @@ where
 - σ ≈ 5.67 x 10<sup>-8</sup> (Wm<sup>-2</sup>K<sup>-4</sup>) is the Stefan-Boltzmann constant,
 - T is the Earth's temperature (we are assuming the temperature is the same generally because this is a very simple model)
 - A = 4πR<sup>2</sup> is the surface area of the planet (a sphere)
-- ε ≈ 1 is the emissivity of the Earth (most condensed matter has pretty good [[notes/blackbody|blackbody]] properties, the **EXCEPTION** for this, which we will consider later in more complex models, is the existence of greenhouse gases).  
+- ε ≈ 1 is the emissivity of the Earth (most condensed matter has pretty good [[notes/blackbody|blackbody]] properties, the **EXCEPTION** for this, which we will consider later in more complex models, is the existence of [[greenhouse gases]]).  
 
 For the other side of the equation, we need to calculate the energy coming in from the Sun.
 $$E_{in} = L(1 - \alpha)A\tag*{(2)}$$
