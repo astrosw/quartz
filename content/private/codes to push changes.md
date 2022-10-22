@@ -6,3 +6,11 @@ git commit -m "message describing changes"
 # Push to GitHub to update site
 git push origin hugo
 ```
+To review changes:
+```bash
+# Navigate to your local Quartz folder
+cd <location-of-your-local-quartz>
+
+# Start local server
+make serve
+```
