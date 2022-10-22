@@ -51,7 +51,7 @@ There are several ways to answer this.
 
 You can use the following formula to calculate the number of particles left (N) after traveling a distance (x):
 
- 
+ <p align="center">N = N<sub>0</sub>e<sup>-σρx</sup></p>
 
 where N<sub>0</sub> is the initial number of particles, σ is the interaction cross section and ρ is the density of matter which the particle pass through.
 

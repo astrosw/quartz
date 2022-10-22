@@ -11,4 +11,5 @@ The balance of energy flow, as incoming sunlight and outgoing infrared, allow us
 
 [[posts/heat|heat]]
 
+[[private/blackbody]]
 

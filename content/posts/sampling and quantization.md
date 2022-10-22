@@ -19,7 +19,7 @@ Basically, we begin with a continuous object and end up with a discrete object t
 
 ## Grayscale images
 
-Each of the squares in _Figure 2.17 (b)_ represents a picture element, denoted by the term _pixel_. A 256x256 spatial domain image, for example, has 256 x 256 = 65,536 pixels, whereas a 1024x1280 image has 1,310,720 pixels. The value of each pixel in grayscale images is related to the amount of bits of data used to represent the pixel (typically 8 bits), ranging from 0 to 255 (28 = 256 grayscale levels created from combinations of 8 binary numbers: 00000000 to 11111111). If a pixel's value is represented by 16 bits, the value range is 0 to 65,535 (216 = 65,536 grayscale levels). We can have higher quality images, for instance, 512x512 images instead of 256x256 images with the same number of letters, so it will take more memory to save that image, but it will also have better quality.
+Each of the squares in _Figure 2.17 (b)_ represents a picture element, denoted by the term _pixel_. A 256x256 spatial domain image, for example, has 256 x 256 = 65,536 pixels, whereas a 1024x1280 image has 1,310,720 pixels. The value of each pixel in grayscale images is related to the amount of bits of data used to represent the pixel (typically 8 bits), ranging from 0 to 255 (2<sup>8</sup> = 256 grayscale levels created from combinations of 8 binary numbers: 00000000 to 11111111). If a pixel's value is represented by 16 bits, the value range is 0 to 65,535 (2<sup>16</sup> = 65,536 grayscale levels). We can have higher quality images, for instance, 512x512 images instead of 256x256 images with the same number of letters, so it will take more memory to save that image, but it will also have better quality.
 
 In grayscale images, the value of each pixel only represents the intensity of light, which ranges from the darkest black to the brightest white. RGB images, which have colors, are another popular image format.
 
@@ -29,7 +29,7 @@ A colored image is made up of many colors, almost all of which can be generated 
 
 To represent the intensity (shades of red, green, and blue) in a pixel, each of the small squares would have values ranging from 0 to 255. Then, all of these matrices (channels) are superimposed so that the final image has the value NxMx3, where N and M are the number of rows and columns, respectively, and 3 represents the number of channels. For example, if each matrix has 6 rows and 5 columns, the image value is 6x5x3.
 
-Most high-end cameras capture full 2-dimensional rays for each color, whereas most low-end to mid-end consumer cameras do something slightly different called [[notes/mosaic|mosaic]]. The basic idea is to capture the pixels with color interleaving (I'll go over this in more detail in another post).
+Most high-end cameras capture full 2-dimensional rays for each color, whereas most low-end to mid-end consumer cameras do something slightly different called [[notes/mosaic|mosaic]]. The basic idea is to capture the pixels with color interleaving.
 
 ## Videos
 
