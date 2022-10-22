@@ -1,5 +1,5 @@
 ---
-title: "Climate"
+title: "Climate Modeling"
 ---
 ## [[notes/Legacy Mars GCM|Legacy Mars Global Climate Model]]
 
