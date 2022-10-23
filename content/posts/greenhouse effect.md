@@ -8,10 +8,10 @@ tags:
 
 *My notebook for the Coursera course: **Global Warming I: The Science and Modeling of Climate Change**, The University of Chicago.*
 
-## Theory
+## Explanation
 
 ![[images/climate modeling/greenhouseeffect1.svg]]
-The figure above depicts the previously described [[posts/naked planet climate model|first basic climate model with bare-rock surface]]. The incoming energy budget is represented by $\dfrac{L(1 - \alpha)}{4}$ in the figure, where L is the solar constant, α is the albedo of Earth, and number 4 represents the geometry of the system (we're considering the entire planet, so it's a sphere, keep this in mind because we'll deal with different problems that consider different conditions). This energy would be balanced by the energy that leaves the system, as indicated by $\epsilon \sigma T^4_{ground}$, where ε, σ and T are the emissivity of Earth, the Stefan-Boltzmann constant, and the Earth's ground temperature, respectively.
+The figure above depicts the previously described [[posts/naked planet climate model|first basic climate model with bare-rock surface]]. The incoming energy budget is represented by $L(1 - \alpha)/4$ in the figure, where L is the solar constant, α is the albedo of Earth, and number 4 represents the geometry of the system (we're considering the entire planet, so it's a sphere, keep this in mind because we'll deal with different problems that consider different conditions). This energy would be balanced by the energy that leaves the system, as indicated by $\epsilon \sigma T^4_{ground}$, where ε, σ and T are the emissivity of Earth, the Stefan-Boltzmann constant, and the Earth's ground temperature, respectively.
 
 However, we discovered that the given model is rather cold in comparison to real-world values. This is due mostly to the presence of [[posts/greenhouse gases|greenhouse gases]] in the atmosphere, which absorb and emit radiation as well.
 
@@ -47,9 +47,9 @@ However, there is a simpler, much less complicated solution: create a general bu
 |------|:----:|:----:|
 |Ground|$\dfrac{L(1 - \alpha)}{4}$|$\epsilon \sigma T^4_a$|
 
-## Examples:
+## Problems:
 
-### Problem 1: How hot is The Moon?
+### How hot is The Moon?
 The layer model assumes that the temperature of the body in space is all the same. This isn't really very accurate, as you know that it's colder at the poles than it is at the equator. For a bare rock with no atmosphere or ocean, like the moon, the situation is even worse, because fluids like air and water are how heat is carried around on the planet. So let's make the other extreme assumption, that there is no heat transport on a bare rock like the moon. Assume for comparability that the albedo of this world is 0.33, and the solar constant is 1350 Watts/m2, same as for Earth.
 
 a) What would be the equilibrium temperature of the surface of the moon, where influx equals outflux, on the equator, at local noon, when the sun is directly overhead, in Kelvins?
@@ -66,7 +66,7 @@ b) What would be the equilibrium temperature, where energy outflow equals energy
 
 *At night there is no sunlight directed towards the surface, so basically no energy flow. The temperature would be 0K.*
 
-### Problem 2: A Stronger Greenhouse Effect
+### A Stronger Greenhouse Effect
 Insert another atmospheric layer into the model, just like the first one.
 ![[images/climate modeling/greenhouseeffect4.svg]]
 *Arrow a represents the energy inflow and arrow f represents the energy outflow of the overall system. We have:*
@@ -80,7 +80,7 @@ $$\dfrac{T_{layer1}}{T_{layer2}}=2^{1/4}$$
 $$\epsilon \sigma(T^4_g+T^4_{layer2})=2\epsilon \sigma T^4_{layer1}$$
 $$\dfrac{T^4_g+T^4_{layer2}}{T^4_{layer1}}=2$$
 $$(\dfrac{T_g}{T_{layer1}})^4=2-(\dfrac{T_{layer2}}{T_{layer1}})^4=2-\dfrac{1}{2}=\dfrac{3}{2}$$
-### Problem 3: Nuclear Winter
+### Nuclear Winter
 Go back to the 1-layer model, but change it so that the atmospheric layer absorbs visible light rather than allowing to pass through.
 ![[images/climate modeling/greenhouseeffect5.svg]]
 This could happen if the upper atmosphere were filled with dust. For simplicity, assume that the albedo of the earth remains at 30%, even though in the real world it might change with a dusty atmosphere. What is the ratio of T<sub>g</sub> / T<sub>a</sub> in this case?
