@@ -50,8 +50,7 @@ In our scenario, however, we wish to send information from New York to Tokyo acr
 There are several ways to answer this.
 
 You can use the following formula to calculate the number of particles left (N) after traveling a distance (x):
-
- <p align="center">N = N<sub>0</sub>e<sup>-σρx</sup></p>
+$$N = N_0e^{-\sigma \rho x}$$
 
 where N<sub>0</sub> is the initial number of particles, σ is the interaction cross section and ρ is the density of matter which the particle pass through.
 
@@ -64,8 +63,7 @@ We can use another method to tackle this problem. Let's have a look at the plot 
 This is a plot that shows the neutrino attenuation during propagation through the Earth. The x-axis is the zenith angle. The left y-axis shows the survival probability of a neutrino, and the right y-axis shows the slant depth in meters of water equivalent that the neutrino at that zenith angle would be passing through. So for our problem, we have 9600km, if we take the standard density of rock of 2.65 g/cm<sup>3</sup>, then 9600km of rock would correspond to approximately 26000km of water equivalent. So according to this plot, going from New York to Tokyo would correspond to a zenith angle of 110<sup>o</sup>. For a 120 GeV beam, for example, we should expect almost no neutrino attenuation. Of course this is just rough estimation.
 
 We can also calculate the neutrino survival probability by ourselves using this formula:
-
-<p align="center">P<sub>surv</sub>=e<sup>-N<sub>A</sub>σ<sub>E<sub>nu</sub></sub>X</sup></p>
+$$P_{surv} = e^{-N_A\sigma_{E_{nu}}X}$$
 
 where N<sub>A</sub> is the Avogadro constant, σ<sub>E<sub>nu</sub></sub> is the total neutrino cross sectrion at energy E<sub>nu</sub>, and X is the slant depth in meters water equivalent. To calculate the slant depth you can use a density model of the Earth like [this](https://de.wikipedia.org/wiki/PREM).
 

@@ -21,7 +21,7 @@ where
 - σ ≈ 5.67 x 10<sup>-8</sup> (Wm<sup>-2</sup>K<sup>-4</sup>) is the Stefan-Boltzmann constant,
 - T is the Earth's temperature (we are assuming the temperature is the same generally because this is a very simple model)
 - A = 4πR<sup>2</sup> is the surface area of the planet (a sphere)
-- ε ≈ 1 is the emissivity of the Earth (most condensed matter has pretty good [[notes/blackbody|blackbody]] properties, the **EXCEPTION** for this, which we will consider later in more complex models, is the existence of [[greenhouse gases]]).  
+- ε ≈ 1 is the emissivity of the Earth (most condensed matter has pretty good [[notes/blackbody|blackbody]] properties, the **EXCEPTION** for this, which we will consider later in more complex models, is the existence of [[posts/greenhouse gases|greenhouse gases]]).  
 
 For the other side of the equation, we need to calculate the energy coming in from the Sun.
 $$E_{in} = L(1 - \alpha)A\tag*{(2)}$$
@@ -38,5 +38,5 @@ Tada! The above equation is the formula for bare-rock layer model.
 
 Of course this is just a very basic model. When we use this method to calculate the temperatures of the planets in our solar system and compare the results to the actual numbers, we find something fascinating. That is, Venus, for example, is far hotter than calculations predicted, as are Earth and Mars. Our current climate model is significantly too cold in comparison to reality. So, what's missing here? What can we add to the model to make it more realistic? One option would be to increase the temperature of the globe by adding greenhouse gases.
 
-Take a look at the next models with greenhouse gases [[greenhouse effect|here]].
+Take a look at the next models with greenhouse gases [[posts/greenhouse effect|here]].
 
