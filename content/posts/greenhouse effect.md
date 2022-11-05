@@ -1,5 +1,5 @@
 ---
-title: "Modeling with Greenhouse Effect"
+title: "Layer Model with Greenhouse Effect"
 date: 2022-09-10
 tags:
 - notebook
@@ -15,7 +15,7 @@ The figure above depicts the previously described [[posts/naked planet climate m
 
 However, we discovered that the given model is rather cold in comparison to real-world values. This is due mostly to the presence of [[posts/greenhouse gases|greenhouse gases]] in the atmosphere, which absorb and emit radiation as well.
 
-For the sake of simplicity, imagine all of the gases that absorb and emit as a pane of glass in the atmosphere.
+For the sake of simplicity, imagine all of the gases that absorb and emit as a pane of glass in the atmosphere. In this layer model, the atmosphere is assumed to be a blackbody in the infrared that absorbs and emits all frequencies of infrared light.
 
 ![[images/climate modeling/greenhouseeffect2.svg]]
 We will also make the following assumptions for this model:
@@ -41,11 +41,13 @@ Then we get the following table for the energy budgets that enter and exit the s
 
 To get the energy budget for the Earth system overall, we could add them up and obtain: $$\dfrac{L(1 - \alpha)}{4} = \epsilon \sigma T^4_a$$
 
-However, there is a simpler, much less complicated solution: create a general budget that depicts the whole system. We may draw a line above the atmosphere representing the border to space (as depicted in the figure). And the results would be the same as what we obtained previously.
+However, there is a simpler, much less complicated solution: create a general budget that depicts the whole system. We may draw a line above the atmosphere representing the border to space (as depicted in the figu  re). And the results would be the same as what we obtained previously.
 
 |Energy budget|IN|OUT|
 |------|:----:|:----:|
-|Ground|$\dfrac{L(1 - \alpha)}{4}$|$\epsilon \sigma T^4_a$|
+|Overall System|$\dfrac{L(1 - \alpha)}{4}$|$\epsilon \sigma T^4_a$|
+
+This is still not close to reality, of course. It turns out that the atmosphere cannot be assumed as a blackbody in the infrared that absorbs and emits all frequencies of infrared light. In fact, gases absorbs infrared light selectively, and most gases in the atmosphere doesn't interact with IR light at all.
 
 ## Problems:
 

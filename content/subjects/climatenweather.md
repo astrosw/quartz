@@ -1,6 +1,8 @@
 ---
-title: "Climate Modeling"
+title: "Climate & Weather"
 ---
+
+## [[posts/predict weather ML|[PROJECT] Predict the weather using Machine Learning]]
 
 ## [[posts/naked planet climate model|Naked Planet Climate Model]]
 
@@ -14,6 +16,6 @@ title: "Climate Modeling"
 
 
 <br></br>
-The above are important writings, click <a href="/quartz/tags/climate">here →</a> to see all posts and notes. 
+The above are important writings, click <a href="/quartz/tags/climate">here →</a> to see all posts and notes on Climate, and <a href="/quartz/tags/weather">here →</a> to see all posts and notes on Weather.
 
 

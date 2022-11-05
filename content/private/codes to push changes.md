@@ -14,3 +14,7 @@ cd <location-of-your-local-quartz>
 # Start local server
 make serve
 ```
+
+github token: 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
+
+expires on Sun, Dec 4 2022
