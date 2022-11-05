@@ -2,7 +2,7 @@
 title: "Climate & Weather"
 ---
 
-## [[posts/predict weather ML|[PROJECT] Predict the weather using Machine Learning]]
+## [[posts/predict weather ML|(PROJECT) Predict the weather using Machine Learning]]
 
 ## [[posts/naked planet climate model|Naked Planet Climate Model]]
 
