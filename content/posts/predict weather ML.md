@@ -6,7 +6,7 @@ tags:
 - weather
 ---
 
-**Github link: https://github.com/thdngan/weatherML **
+**Github link: https://github.com/thdngan/weatherML** 
 
 In this little project, I followed the instructions from the [Predict The Weather with Machine Learning](https://youtu.be/km95-NMT6lU) project from Dataquest.
 
