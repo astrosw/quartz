@@ -1,6 +1,6 @@
 ---
 title: "[Case Study] Estimating Heat Transfer of a lake"
-date: 2022-11-24
+date: 2022-11-02
 tags:
 - case study
 ---
