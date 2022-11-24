@@ -5,6 +5,8 @@ git commit -m "message describing changes"
 
 # Push to GitHub to update site
 git push origin hugo
+# OR:
+git push origin main
 ```
 To review changes:
 ```bash
