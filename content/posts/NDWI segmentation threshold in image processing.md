@@ -1,0 +1,104 @@
+---
+title: "NDWI Segmentation Threshold in Image Processing"
+date: 2022-11-01
+tags:
+- image processing
+---
+
+# Background
+
+Image segmentation is frequently used in digital image processing and analysis to divide a digital image into a number of regions of pixels, usually based on the properties of the pixels in the image. For instance, picture segmentation might be used to distinguish between the foreground and background or to group together clusters of pixels that have a common color or shape.
+
+Thresholding is a method that refers to a common approach of finding similarities between regions of an image. Here, we alter an image's pixel characteristics to make it simpler to analyze. We turn a grayscale or RGB image into a binary image (only black and white, for example). Thresholding allows us to select the areas of an image that are of interest while disregarding the other parts. For instance, using a satellite image, this technique may be used to identify areas of surface water! Isn't it interesting how we can separate and highlight water regions on a planet from satellite images? In this post, I'll give a brief overview of the principles and how ENVI and MATLAB can be used to implement it.
+
+# Principles
+
+There are a few important concepts for segmentation thresholding using NDWI/NDVI.
+
+### Digital Number (DN)
+
+A digital image is a matrix made of pixels (picture elements). Each pixel is filled by an integer called a digital number. The digital number represents the radiance of the light measured for the pixel, and it is proportional to the radiance. A 256x256 [[posts/sampling and quantization|spatial domain]] image, for example, has 256 x 256 = 65,536 pixels, whereas a 1024x1280 image has 1,310,720 pixels. The value of each pixel in grayscale images is related to the amount of bits of data used to represent the pixel (typically 8 bits), ranging from 0 to 255 (2<sup>8</sup> = 256 grayscale levels created from combinations of 8 binary numbers: 00000000 to 11111111). If a pixel's value is represented by 16 bits, the value range is 0 to 65,535 (2<sup>16</sup> = 65,536 grayscale levels).
+
+![[images/image processing/qinghai landsat b3.png]]
+<p align = "center">  
+<i>LANDSAT 8-9 image of Qinghai Lake (China) in the visible green band (Band 3)
+</i>
+</p>
+You can have a look at the properties of this image using QGIS or many other applications.
+
+![[images/image processing/qinghai landsat b3 properties.png]]
+
+So this is a 16-bit image, which means the value range of each pixel would be from 0 to 65,535, representing the intensity of visible green light. For this particular image, the minimum value of a pixel is 4 (not completely "black") and the maximum value is 65,454.
+
+If you open this image in ENVI and access the cursor value, the number for data is the digital number of the pixel where your cursor is hovering.
+ ![[images/image processing/digital number data value envi.png]]
+ <p align = "center">  
+<i>Here, my cursor is pointing at a pixel with a digital number of 8267
+</i>
+</p>
+Digital numbers correlate with the energy that is observed and measured at the sensor. They are related to the surface reflectance values; however, they are NOT the same! Using DNS acquired by a satellite without correcting for atmospheric effects as light travels through the atmosphere could lead to problems!
+
+Then what do we use instead?
+
+### Top of Atmosphere (TOA)
+
+Radiance is directly measured by remote sensing instruments. This includes the radiation reflected from the surface, in addition to the radiation that bounces in from neighboring pixels, and also extremely importantly, radiation reflected from clouds! Furthermore, radiance depends not only on the illumination of the target (both intensity and direction), but also the orientation and position. In other words, the path of light through the atmosphere is affected by many factors as the light travels down to the earth through the atmosphere, and then diffusively reflects off the Earth's surface, traveling back up through the atmosphere again, suffering scattering effects. Thus, instead of the digital number, we would determine the Top of Atmosphere (TOA) reflectance values, which can be estimated mainly from radiance leaving the ground, transmission factors and path radiance.
+
+Reflectance values range from 0 to 1 and are stored in floating point data format. With ENVI, you can easily convert Landsat optical band data from the USGS in the "USGS GeoTIFF with Metadata" format to TOA reflectance values when you open the USGS file that ends with "MLT.TXT". More details can be found in Section 1 of [this page](https://yceo.yale.edu/how-convert-landsat-dns-top-atmosphere-toa-reflectance?fbclid=IwAR0UbHmDqOGd6FrrCxYh7CcCTHtwFZ7u6wJhEyMscWnD3wUHrUHSWIYjFVo).
+
+The metadata file "MLT.TXT"  provides rescaling factors and parameters that can be used to manually convert Landsat data to TOA reflectance with the following formula, using the tool **Band Math**.
+
+$$\rho_\lambda = \dfrac{M_\rho Q_{cal}+A_\rho}{cos(\theta_{SZ})} = \dfrac{M_\rho Q_{cal}+A_\rho}{sin(\theta_{SE})}$$
+where:
+- $M_\rho$ is the band-specific multiplicative rescaling factor (REFLECTANCE_MULT_BAND_x in the metadata, where x is the band number).
+- $A_\rho$ is the band-specific additive rescaling factor (REFLECTANCE_ADD_BAND_x).
+- $Q_{cal}$ is the quantized and calibrated standard product pixel values (digital number DN).
+- $M_\rho Q_{cal} + A_\rho$ is then the TOA planetary reflectance without correction for solar angle.
+- $\theta_{SE}$ is the local sun elevation angle (SUN_ELEVATION)
+- $\theta_{SZ}$ is the local solar zenith angle; $\theta_{SZ}=90\degree-\theta_{SE}$
+
+And below is the result I got after converting from DN to TOA. You can see that the cursor value for data has changed. Its range (originally 0 to 65,535) is now from -1 to 1.
+
+![[images/image processing/qinghai landsat TOA b3.png]]
+
+### NDVI and NDWI
+
+NDVI stands for Normalized Difference Vegetation Index and NDWI stands for Normalized Difference Water Index.
+
+NDVI is used to quantify vegetation greenness and is useful in understanding vegetation density. Vegetation is quantified by measuring the difference between near-infrared (which vegetation strongly reflects) and red light (which vegetation absorbs).
+
+$$NDVI = \dfrac{NIR - Red}{NIR+Red}$$
+
+On the other hand, NDWI is used to monitor changes related to water content in water bodies. As water bodies strongly absorb light in visible to infrared electromagnetic spectrum, NDWI uses green and near-infrared bands to hightlight water bodies.
+
+$$NDWI = \dfrac{Green - NIR}{Green +NIR}$$
+
+![[images/image processing/bands_reflectance.png]]
+
+From the above figure, it is apparent that reflection in **NIR** wavelength over water bodies is **lower** than reflection in the **Red** wavelength. As a result, **water bodies** will have ***negative NDVI*** values. On the contrary, reflection in **Green** wavelength over water bodies is **higher** than reflection in **NIR** wavelength. Thus, **water bodies** will have ***positive NDWI*** values.
+
+For Landsat 8, band 3 represents visible green light, band 4 represents visible red light and the near-infrared is shown in band 5. Therefore, for Landsat 8 data, we can calculate the NDVI and NDWI like below:
+
+$$NDVI = \dfrac{B5-B4}{B5+B4}$$
+$$NDWI = \dfrac{B3-B5}{B3+B5}$$
+Using the NDVI tool on a layerstacked image (for example, layerstacking band 3 and band 5 to calculate NDWI), we can obtain the following result:
+
+![[images/image processing/qinghai landsat ndwi35 water.png]]
+ <p align = "center">  
+<i>The cursor is hovering over Qinghai lake so we have positive NDWI value (I imported the NDWI file into the blue band)
+</i>
+</p>
+![[images/image processing/qinghai landsat ndwi35 nonwater.png]]
+ <p align = "center">  
+<i>The cursor is hovering over non-water area so we have negative NDWI value
+</i>
+</p>
+And now we're almost done with the processes using ENVI! For further processing in MATLAB, we need to convert the map projection from UTM to **Geographic Lat/Lon**, using **Map| Convert Map Projection**, and then save the file as TIFF/GeoTIFF.
+
+I will write another post for detailed explanation on the MATLAB scripts for extracting water bodies from the NDWI image obtained, and also removing cloud-covered pixels using the BQA file.
+
+![[images/image processing/Histogram_NDWI.jpg]]
+
+![[images/image processing/NDWI_LANDSAT.jpg]]
+
+![[images/image processing/Surface_Water_LANDSAT_NDWI.jpg]]
