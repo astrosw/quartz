@@ -17,4 +17,4 @@ cd <location-of-your-local-quartz>
 make serve
 ```
 
-github token: ghp_z77G33OTyz0gqd     .HudnvpS2PJhkemsx228GG4
+github token: ghp_z77G33OTyz0gqd..HudnvpS2PJhkemsx228GG4

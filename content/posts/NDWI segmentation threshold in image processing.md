@@ -36,13 +36,21 @@ If you open this image in ENVI and access the cursor value, the number for data 
 <i>Here, my cursor is pointing at a pixel with a digital number of 8267
 </i>
 </p>
-Digital numbers correlate with the energy that is observed and measured at the sensor. They are related to the surface reflectance values; however, they are NOT the same! Using DNS acquired by a satellite without correcting for atmospheric effects as light travels through the atmosphere could lead to problems!
+Digital numbers correspond to the energy detected and measured at the sensor. They are connected to surface reflectance values, but they are NOT the same! Using DNs collected by satellite without adjusting for atmospheric effects as light passes through the atmosphere may result in many problems!
 
 Then what do we use instead?
 
 ### Top of Atmosphere (TOA)
 
-Radiance is directly measured by remote sensing instruments. This includes the radiation reflected from the surface, in addition to the radiation that bounces in from neighboring pixels, and also extremely importantly, radiation reflected from clouds! Furthermore, radiance depends not only on the illumination of the target (both intensity and direction), but also the orientation and position. In other words, the path of light through the atmosphere is affected by many factors as the light travels down to the earth through the atmosphere, and then diffusively reflects off the Earth's surface, traveling back up through the atmosphere again, suffering scattering effects. Thus, instead of the digital number, we would determine the Top of Atmosphere (TOA) reflectance values, which can be estimated mainly from radiance leaving the ground, transmission factors and path radiance.
+Remote sensing tools directly measure radiance. This includes radiation reflected from the surface, as well as radiation reflected from nearby pixels, and perhaps most significantly, radiation reflected from clouds! Furthermore, radiance is affected not only by the intensity and direction of the target's illumination, but also by its orientation and position.
+
+*Read more about the energy transfer in the atmosphere through my posts on [[subjects/climatenweather|climate and weather]]*
+
+![[images/image processing/reflectance through atmosphere.png]]
+
+![[images/image processing/diffuse_v_specular.png]]
+
+In other words, the travel of light in the atmosphere is influenced by a variety of elements as it goes down to the Earth through the atmosphere, diffusively reflects off the Earth's surface, and then returns up through the atmosphere, suffering from scattering effects. Thus, instead of the digital number, we would determine the Top of Atmosphere (TOA) reflectance values, which can be estimated mainly from radiance leaving the ground, transmission factors and path radiance.
 
 Reflectance values range from 0 to 1 and are stored in floating point data format. With ENVI, you can easily convert Landsat optical band data from the USGS in the "USGS GeoTIFF with Metadata" format to TOA reflectance values when you open the USGS file that ends with "MLT.TXT". More details can be found in Section 1 of [this page](https://yceo.yale.edu/how-convert-landsat-dns-top-atmosphere-toa-reflectance?fbclid=IwAR0UbHmDqOGd6FrrCxYh7CcCTHtwFZ7u6wJhEyMscWnD3wUHrUHSWIYjFVo).
 
