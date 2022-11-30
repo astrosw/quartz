@@ -75,11 +75,11 @@ And below is the result I got after converting from DN to TOA. You can see that 
 
 NDVI stands for Normalized Difference Vegetation Index and NDWI stands for Normalized Difference Water Index.
 
-NDVI is used to quantify vegetation greenness and is useful in understanding vegetation density. Vegetation is quantified by measuring the difference between near-infrared (which vegetation strongly reflects) and red light (which vegetation absorbs).
+The Normalized Difference Vegetation Index (NDVI) is used to evaluate vegetation greenness and is important in evaluating vegetation density. The difference in near-infrared (which plant significantly reflects) and red light (which plant absorbs) is used to quantify vegetation.
 
 $$NDVI = \dfrac{NIR - Red}{NIR+Red}$$
 
-On the other hand, NDWI is used to monitor changes related to water content in water bodies. As water bodies strongly absorb light in visible to infrared electromagnetic spectrum, NDWI uses green and near-infrared bands to hightlight water bodies.
+On the other hand, the Normalized Difference Water Index (NDWI) is used to evaluate changes in water content in bodies of water. Because water bodies absorb light substantially in the visible to infrared electromagnetic radiation spectrum, NDWI highlights water bodies using green and near-infrared wavelengths.
 
 $$NDWI = \dfrac{Green - NIR}{Green +NIR}$$
 
