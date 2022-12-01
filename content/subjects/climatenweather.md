@@ -2,11 +2,13 @@
 title: "Climate & Weather"
 ---
 
+## [[posts/case study - greenhouse gases and rainwater|[Case Study] Greenhouse gases and rainwater]]
+
 ## [[posts/predict weather ML|(PROJECT) Predict the weather using Machine Learning]]
 
 ## [[posts/naked planet climate model|Naked Planet Climate Model]]
 
-## [[posts/greenhouse effect|Greenhouse Effect]]
+## [[posts/greenhouse effect|Layer Model with Greenhouse Effect]]
 
 ## [[posts/greenhouse gases|The physics of greenhouse gases]]
 

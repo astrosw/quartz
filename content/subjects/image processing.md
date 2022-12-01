@@ -1,6 +1,9 @@
 ---
 title: "Signal/Image Processing"
 ---
+
+## [[posts/NDWI segmentation threshold in image processing|NDWI Segmentation Threshold in Image Processing]]
+
 ## [[posts/sampling and quantization|Sampling and Quantization in Image Processing]]
 
 
