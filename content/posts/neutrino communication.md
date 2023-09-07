@@ -28,10 +28,6 @@ Neutrinos can essentially travel through anything and everything. They can propa
 
 *The concept of cross section would be helpful in comprehending this rarity. Cross section (σ(cm<sup>2</sup>) is the size of the target particle from a view point of interaction. For example, if 1 GeV protons interact with the target nuclei, the interaction is a hadron interaction with a cross section of σ ~ 3 x 10<sup>-26</sup> cm<sup>2</sup>. On the other hand, if 1 GeV neutrinos encounter the target nuclei, the interaction is weak, with a cross section of about σ ~ 1 x 10<sup>-38</sup> cm<sup>2</sup>. It is smaller than that of hadron interaction by a factor of 3 x 10<sup>12</sup>.*
 
-## Comparison to conventional communications
-
-c
-
 
 ## Operation and Challenges
 
@@ -60,17 +56,20 @@ We can use another method to tackle this problem. Let's have a look at the plot 
 
 ![[images/particle physics/maxmeier.jpg]]
 
-This is a plot that shows the neutrino attenuation during propagation through the Earth. The x-axis is the zenith angle. The left y-axis shows the survival probability of a neutrino, and the right y-axis shows the slant depth in meters of water equivalent that the neutrino at that zenith angle would be passing through. So for our problem, we have 9600km, if we take the standard density of rock of 2.65 g/cm<sup>3</sup>, then 9600km of rock would correspond to approximately 26000km of water equivalent. So according to this plot, going from New York to Tokyo would correspond to a zenith angle of 110<sup>o</sup>. For a 120 GeV beam, for example, we should expect almost no neutrino attenuation. Of course this is just rough estimation.
+This is a plot that shows the neutrino attenuation during propagation through the Earth. The x-axis is the zenith angle. The left y-axis shows the survival probability of a neutrino, and the right y-axis shows the slant depth in meters of water equivalent that the neutrino at that zenith angle would be passing through. So for our problem, we have 9600 km, if we take the standard density of rock of 2.65 g/cm<sup>3</sup>, then 9600 km of rock would correspond to approximately 26000 km of water equivalent. So according to this plot, going from New York to Tokyo would correspond to a zenith angle of 110<sup>o</sup>. For a 120 GeV beam, for example, we should expect almost no neutrino attenuation. Of course this is just rough estimation.
 
 We can also calculate the neutrino survival probability by ourselves using this formula:
 $$P_{surv} = e^{-N_A\sigma_{E_{nu}}X}$$
 
-where N<sub>A</sub> is the Avogadro constant, σ<sub>E<sub>nu</sub></sub> is the total neutrino cross sectrion at energy E<sub>nu</sub>, and X is the slant depth in meters water equivalent. To calculate the slant depth you can use a density model of the Earth like [this](https://de.wikipedia.org/wiki/PREM).
+where N<sub>A</sub> is the Avogadro constant, σ<sub>E<sub>nu</sub></sub> is the total neutrino cross section at energy E<sub>nu</sub>, and X is the slant depth in meters water equivalent. To calculate the slant depth you can use a density model of the Earth like [this](https://de.wikipedia.org/wiki/PREM).
 
 Regarding the neutrino oscillations, at ~100 GeV energies neutrino oscillations can change the flavour of our neutrino beam. But most likely our neutrino detector will be able to detect all neutrino flavours. So if the idea of communication is similar to the past experiment using NuMI beam line and MINERvA detector (encoding communication bits by the neutrino beam being either on or off), I think the flavour composition of the neutrino beam should not be relevant.
 
-There is another approach to the flavour change problem. When a mu-neutrino oscillates to a tau-neutrino and the energy is less than tau production threshold, charged current (CC) interactions never happen. In this case, the neutrino oscillation affects the detection. However the energy that was used (and will be used) is higher enough than the tau production threshold. (I think the interaction cross sections nu-e, nu-mu, and nu-tau can be assumed to be the same; neutral current (NC) cross sections are always the same for nu-e, nu-mu and nu-tau).
+There is another approach to the flavour change problem. When a mu-neutrino oscillates to a tau-neutrino and the energy is less than tau production threshold, charged current (CC) interactions never happen. In this case, the neutrino oscillation affects the detection. However the energy that was used (and will be used) is higher enough than the tau production threshold. (I think the interaction cross sections $\nu_e$, $\nu_{\mu}$ and $\nu_{\tau}$ can be assumed to be the same; neutral current (NC) cross sections are always the same for $\nu_e$, $\nu_{\mu}$ and $\nu_{\tau}$).
 
+
+
+<!---
 ### Beam intensity
 
 numi
@@ -80,3 +79,4 @@ numi
 minerva
 
 ## Conclusion
+-->
