@@ -5,7 +5,7 @@ tags:
   - paper-notes
   - discussions
   - planetary-science
-draft: false
+draft: true
 ---
 (Reference: Bauska et al. 2020)
 
@@ -32,11 +32,11 @@ How atmospheric CO2 varied during the last glacial period and the processes driv
 
 ## Results
 
-[[Bauska_Fig1.png]]
+![[Bauska_Fig1.png]]
 
 
-[[Bauska_Fig2.png]]
+![[Bauska_Fig2.png]]
 
 
-[[Bauska_Fig3.png]]
+![[Bauska_Fig3.png]]
 
