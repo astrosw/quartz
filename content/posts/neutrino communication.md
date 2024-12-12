@@ -19,7 +19,7 @@ Of course in order to discuss all that, we need to grasp the basic concepts. The
 
 Basically they are elementary particles that have neutral charge and very VERY small mass (thought to be massless for a long time). They are [[notes/fermions|fermions]] that interact only via the [[notes/weak interactions|weak interactions]] and [[notes/gravity|gravity]].
 
-*Well, I do realize the above explanation is still a little vague for those who are unfamiliar with particle physics (like me). Like okay, they're fermions, but what are fermions? What exactly are elementary particles? Where do they exist in atoms, and how do they connect with other particles that we are more familiar with, such as electrons, protons, and neutrons? And so i decided to set up this site to utiliize the power of bidirectional links. You can move to the individual notes of each concept by clicking on the internal links, or you can look at how these are connected in the interactive graph at the bottom.*
+*Well, I do realize the above explanation is still a little vague for those who are unfamiliar with particle physics (like me). Like okay, they're fermions, but what are fermions? What exactly are elementary particles? Where do they exist in atoms, and how do they connect with other particles that we are more familiar with, such as electrons, protons, and neutrons? And so i decided to set up this site to make the most of the power of bidirectional links. You can move to the individual notes of each concept by clicking on the internal links, or you can look at how these are connected in the interactive graph.*
 
 ## Why neutrinos for communication?
 
