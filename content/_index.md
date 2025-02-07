@@ -25,10 +25,10 @@ You can easily navigate between notes by clicking on internal links within each 
 
 - #planetary-science, #climate (mostly modeling),
 - #astrophysics ,
-- #image-processing , 
 - #particle physics,
 - #chemistry (more like physical chemistry actually),
 - or just #physics in general,
+- and random topics (that I'll probably never touch on again *lol*) like #image-processing , #seismology, #earthquakes
 - and [more](https://thdngan.github.io/arboretum/tags/)!
 
 
