@@ -12,7 +12,7 @@ enableToc: false
 
 Welcome to my [digital arboretum](https://nesslabs.com/digital-garden-set-up#:~:text=A%20digital%20garden%20is%20an,to%20be%20cultivated%20in%20public.)!
 
-I'm Ngân (Ryan), a student majoring in Space Science.  This is where I keep track of all of my ideas, #notes, #notebooks , #discussions, personal #projects, and pretty much everything else. These notes may not be polished or final; some are posted as #incomplete thoughts (or even #blank ) that I may revisit later or link to other notes to develop and change over time.
+I'm Ngân (Ryan), a student majoring in Space Science.  This is where I keep track of all of my ideas,  #notes,  #notebooks,  #discussions, personal  #projects, and pretty much everything else. These notes may not be polished or final; some are posted as  #incomplete thoughts (or even  #blank notes) that I may revisit later or link to other notes to develop and change over time.
 
 *You might be wondering why there are penguins in an arboretum. Well, I don't know either xD*
 
@@ -23,12 +23,12 @@ I'm Ngân (Ryan), a student majoring in Space Science.  This is where I keep tra
   
 You can easily navigate between notes by clicking on internal links within each page or by using the nodes on the interactive graph. If you're on a desktop, the graph is located on the right side of the page, and if you're using a mobile device, you can find it at the bottom of the page. You can also use the search tool 🔍 at the top (or ```Ctrl+K```) to look for posts and keywords. Alternatively, you may look at a list of my topics here:
 
-- #planetary-science, #climate (mostly modeling),
-- #astrophysics ,
+- #planetary-science,  #climate (mostly modeling),
+- #astrophysics,
 - #particle physics,
 - #chemistry (more like physical chemistry actually),
-- or just #physics in general,
-- and random topics (that I'll probably never touch on again *lol*) like #image-processing , #seismology, #earthquakes
+- or just  #physics in general,
+- and random topics (that I'll probably never touch on again *lol*) like  #image-processing,  #seismology,  #earthquakes
 - and [more](https://thdngan.github.io/arboretum/tags/)!
 
 
