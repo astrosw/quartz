@@ -12,30 +12,39 @@ enableToc: false
 
 Welcome to my [digital arboretum](https://nesslabs.com/digital-garden-set-up#:~:text=A%20digital%20garden%20is%20an,to%20be%20cultivated%20in%20public.)!
 
-I'm Ngân (Ryan), a student majoring in Space Science.  This is where I keep track of all of my ideas,  #notes,  #notebooks,  #discussions, personal  #projects, and pretty much everything else. These notes may not be polished or final; some are posted as  #incomplete thoughts (or even  #blank notes) that I may revisit later or link to other notes to develop and change over time.
+Hey, I’m Ngân (Ryan), an aspiring researcher with a habit of collecting thoughts and sometimes leaving them half-baked like an unripe avocado. This is my little corner of the internet where I stash ideas,  #notes,  #notebooks ,  #discussions, personal  #projects, and whatever else pops into my orbit. Some notes are polished, some are  #incomplete  scribbles, and a few might just be  #empty placeholders waiting for future me to figure things out. Consider this a living, evolving brain-dump.
 
-*You might be wondering why there are penguins in an arboretum. Well, I don't know either xD*
+Now, if you’re wondering why there are penguins 🐧 waddling around an arboretum… honestly, same. I just rolled with it.
 
+And why is it *L'arboretum*? Claire, it's French ✨!
 
+# Lost in the trees? Don't worry, I've got a map 
 
-# How to navigate
+You can hop between posts and notes by clicking on **[[daisyworld|links like this]]** inside each page or by using the **interactive map**. If you're on a desktop, you’ll find it on the **right side** of the page. On mobile? Scroll down, it’s waiting at the **bottom**. There are also handy buttons on the bottom right to:  
+🗺️ **Open the map** (for the adventurous)  
+🎲 **Pick a random post** (for the chaotic)  
+⬆️⬇️ **Jump to the top/bottom** (for the efficient)
 
-  
-You can navigate between posts/notes by clicking on [[daisyworld|internal links like this]] within each page or by using the nodes on the interactive graph. If you're on a desktop, the graph is located on the right side of the page, and if you're using a mobile device, you can find it at the bottom of the page. There are also buttons on the bottom right to access the graph, randomly choose a post, or scroll to the top/bottom of the page. You can also use the search tool 🔍 at the top (or ```Ctrl+K```) to look for posts and keywords. Alternatively, you may look at a list of my topics here:
+Feeling extra lost? There's a **search tool** 🔍 at the top (or just hit `Ctrl+K`) to dig through the archives.
 
-- #planetary-science,  #climate (mostly modeling),
-- #astrophysics,
-- #particle physics,
-- #chemistry (more like physical chemistry actually),
-- or just  #physics in general,
-- and random topics (that I'll probably never touch on again *lol*) like  #image-processing,  #seismology,  #earthquakes
-- and [more](https://thdngan.github.io/arboretum/tags/)!
+Or if you just wanna see what kind of rabbit holes I’ve fallen into, here are some of my main topics:
 
+- 🪐 **#planetary-science** & **#climate** (mostly modeling)
+- 🌌 **#astrophysics**
+- ⚛️ **#particle** physics
+- 🧪 **#chemistry** (more like _physical_ chemistry, really)
+- 📡 Just **#physics** in general
+- 🤷‍♂️ And completely random topics I’ll probably never revisit (_lol_), like **#image-processing,  #seismology,  #earthquakes**
+- And of course, [**even more stuff**](https://thdngan.github.io/arboretum/tags/)!
+
+Go ahead, click around—I promise no black holes 🕳️🐧.
 
 # Acknowledgement
 
 
-I discovered [Quartz](https://quartz.jzhao.xyz/) while searching for a way to publish my [Obsidian](https://obsidian.md/) notes on a [[neutrino communication|neutrino application]]. I've had so much fun setting up my own garden, *and a little \*coughs\* headache because I was truly a noob at front-end stuff lol*. The results are really worth it though, and I picked up a ton of knowledge along the way. Many thanks to [Jacky Zhao](https://github.com/jackyzha0) for creating this incredible tool!
+I stumbled upon [Quartz](https://quartz.jzhao.xyz/) while on a quest to find a way to publish my [Obsidian](https://obsidian.md/) notes on a [[neutrino communication|neutrino application]]. What followed was an absolute **blast** (and, let’s be real, a mild headache) as I set up my own digital arboretum. Turns out, wrestling with front-end stuff when you’re a total noob is both exciting and painful—10/10 would recommend, but also, _send help_.
+
+That said, the struggle was so worth it! I picked up a ton of new knowledge along the way, and this little blog wouldn’t exist without [Jacky Zhao](https://github.com/jackyzha0) and the incredible tool they built. Huge thanks for making this possible!
 
 <!-- <hr />  -->
 

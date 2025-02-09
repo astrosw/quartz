@@ -9,7 +9,7 @@ tags:
 
 (still writing...)
 
-***DISCLAIMER:*** *Particle Physics is not my area of study. Please let me know if you notice any mistakes or omissions.*
+***DISCLAIMER:*** *Particle Physics is not my area of study. Please let me know if you notice any mistakes.*
 
 In this post, I'll discuss the possibility of using [[notes/neutrinos|neutrinos]] for communication between New York and Tokyo and answer the questions: What can we gain with neutrino-based communication in comparison to the conventional communications? What's the most challenging for developing this kind of communication?
 
@@ -19,7 +19,9 @@ Of course in order to discuss all that, we need to grasp the basic concepts. The
 
 Basically they are elementary particles that have neutral charge and very VERY small mass (thought to be massless for a long time). They are [[notes/fermions|fermions]] that interact only via the [[notes/weak interactions|weak interactions]] and [[notes/gravity|gravity]].
 
-*Well, I do realize the above explanation is still a little vague for those who are unfamiliar with particle physics (like me). Like okay, they're fermions, but what are fermions? What exactly are elementary particles? Where do they exist in atoms, and how do they connect with other particles that we are more familiar with, such as electrons, protons, and neutrons? And so i decided to set up this site to make the most of the power of bidirectional links. You can move to the individual notes of each concept by clicking on the internal links, or you can look at how these are connected in the interactive graph.*
+*I know, I know...The explanation above is still kind of vague, especially if you're not deep into particle physics (honestly, same). Like, cool, they're [[fermions]], but... what even are [[fermions]]? What exactly counts as an [[elementary particles|elementary particle]]? Where do they hang out inside atoms? And how do they connect to the particles we actually recognize—[[electrons]], [[protons]], [[neutrons]]?*
+
+*That’s exactly why I set up this site (though the topics kind of strayed far from* just *particle physics)—to take full advantage of bidirectional links and make sense of all this. Instead of aimlessly Googling definitions, you can jump between individual notes by clicking the [[fermions|internal links]], or explore how everything connects in the interactive graph..*
 
 ## Why neutrinos for communication?
 

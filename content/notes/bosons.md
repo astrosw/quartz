@@ -5,6 +5,6 @@ tags:
   - particle
   - physics
   - notes
-  - blank
+  - empty
 ---
 
