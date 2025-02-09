@@ -2,7 +2,6 @@
 title: L'arboretum
 date: 2021-11-01
 enableToc: false
-comments: false
 ---
 
 <img id="banner" src="/images/banner.svg">
@@ -22,7 +21,7 @@ I'm Ngân (Ryan), a student majoring in Space Science.  This is where I keep tra
 # How to navigate
 
   
-You can easily navigate between notes by clicking on internal links within each page or by using the nodes on the interactive graph. If you're on a desktop, the graph is located on the right side of the page, and if you're using a mobile device, you can find it at the bottom of the page. You can also use the search tool 🔍 at the top (or ```Ctrl+K```) to look for posts and keywords. Alternatively, you may look at a list of my topics here:
+You can navigate between posts/notes by clicking on [[daisyworld|internal links like this]] within each page or by using the nodes on the interactive graph. If you're on a desktop, the graph is located on the right side of the page, and if you're using a mobile device, you can find it at the bottom of the page. There are also buttons on the bottom right to access the graph, randomly choose a post, or scroll to the top/bottom of the page. You can also use the search tool 🔍 at the top (or ```Ctrl+K```) to look for posts and keywords. Alternatively, you may look at a list of my topics here:
 
 - #planetary-science,  #climate (mostly modeling),
 - #astrophysics,
@@ -38,7 +37,7 @@ You can easily navigate between notes by clicking on internal links within each 
 
 I discovered [Quartz](https://quartz.jzhao.xyz/) while searching for a way to publish my [Obsidian](https://obsidian.md/) notes on a [[neutrino communication|neutrino application]]. I've had so much fun setting up my own garden, *and a little \*coughs\* headache because I was truly a noob at front-end stuff lol*. The results are really worth it though, and I picked up a ton of knowledge along the way. Many thanks to [Jacky Zhao](https://github.com/jackyzha0) for creating this incredible tool!
 
-
+<!-- <hr />  -->
 
 <!---
 https://thdngan.github.io/quartz/subjects
