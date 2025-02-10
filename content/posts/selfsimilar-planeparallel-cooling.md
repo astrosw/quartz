@@ -1,5 +1,5 @@
 ---
-title: Radiative Cooling of Molecular Cloud under Gravitational Collapse
+title: Radiative Cooling of Gravitationally Collapsing Molecular Cloud
 tags:
   - astrophysics
   - discussions

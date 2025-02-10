@@ -45,6 +45,8 @@ I stumbled upon [Quartz](https://quartz.jzhao.xyz/) while on a quest to find a w
 
 That said, the struggle was so worth it! I picked up a ton of new knowledge along the way, and this little blog wouldn’t exist without [Jacky Zhao](https://github.com/jackyzha0) and the incredible tool they built. Huge thanks for making this possible!
 
+<!-- Also, big shout-out to [Eilleen](https://quartz.eilleeenz.com/) for their ridiculously helpful Quartz [customization log](https://quartz.eilleeenz.com/Quartz-customization-log)—those footnotes and floating buttons are absolute lifesavers 😉. -->
+
 <!-- <hr />  -->
 
 <!---
