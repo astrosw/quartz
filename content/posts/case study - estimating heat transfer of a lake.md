@@ -4,6 +4,7 @@ date: 2022-11-02
 tags:
   - planetary-science
   - case-studies
+draft: true
 ---
 
 Github link: https://github.com/thdngan/case-studies/tree/main/spline_heattransfer

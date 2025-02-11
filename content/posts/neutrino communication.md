@@ -5,9 +5,10 @@ tags:
   - particle
   - physics
   - discussions
+  - incomplete
 ---
 
-(still writing...)
+*This is one of those ancient posts that is still incomplete and I just don't know if I'll ever find the motivation to finish it lol. BUT. It did set the foundation for this little blog, so I'll leave it here, and hope that someday I'll be able to delete the annoying  #incomplete tag :)*
 
 ***DISCLAIMER:*** *Particle Physics is not my area of study. Please let me know if you notice any mistakes.*
 
@@ -57,11 +58,13 @@ where N<sub>0</sub> is the initial number of particles, σ is the interaction cr
 
 So when the particle is a neutrino, we all know that the cross section is very small, about 10<sup>-38</sup> cm<sup>2</sup>/GeV. For the density, we can take the standard density of rock, which is 2.65 g/cm<sup>3</sup>, and x would be 9600km. So the reduction should be really really small, even if the path length is very long and the neutrino energy is very high.
 
-We can use another method to tackle this problem. Let's have a look at the plot below
+We can use another method to tackle this problem. Let's have a look at the plot below:
 
-![[images/particle physics/maxmeier.jpg]]
+>[!caption_left]
+>![[maxmeier.jpg]]
+>(A cool plot in German that a professor sent me many years ago and I haven't been able to find the source yet lol, it's so ancient that I'm too shy right now to just email this professor and ask him...). Anyway, it shows the neutrino attenuation during propagation through the Earth. The x-axis is the zenith angle. The left y-axis shows the survival probability of a neutrino, and the right y-axis shows the slant depth in meters of water equivalent that the neutrino at that zenith angle would be passing through.
 
-This is a plot that shows the neutrino attenuation during propagation through the Earth. The x-axis is the zenith angle. The left y-axis shows the survival probability of a neutrino, and the right y-axis shows the slant depth in meters of water equivalent that the neutrino at that zenith angle would be passing through. So for our problem, we have 9600 km, if we take the standard density of rock of 2.65 g/cm<sup>3</sup>, then 9600 km of rock would correspond to approximately 26000 km of water equivalent. So according to this plot, going from New York to Tokyo would correspond to a zenith angle of 110<sup>o</sup>. For a 120 GeV beam, for example, we should expect almost no neutrino attenuation. Of course this is just rough estimation.
+So for our problem, we have 9600 km, if we take the standard density of rock of 2.65 g/cm<sup>3</sup>, then 9600 km of rock would correspond to approximately 26000 km of water equivalent. So according to this plot, going from New York to Tokyo would correspond to a zenith angle of 110<sup>o</sup>. For a 120 GeV beam, for example, we should expect almost no neutrino attenuation. Of course this is just rough estimation.
 
 We can also calculate the neutrino survival probability by ourselves using this formula:
 $$

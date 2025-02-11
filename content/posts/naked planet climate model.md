@@ -18,13 +18,13 @@ E_{in} = E_{out}
 \tag*{(*)}
 $$
 
-The energy coming out of Earth can be calculated using the Stefan-Boltzmann formula:
+The energy coming out of Earth can be calculated using the [[Stefan-Boltzmann law|Stefan-Boltzmann]] formula:
 $$
 E_{out} = \epsilon\sigma T^4A
 \tag*{(1)}
 $$
 where 
-- σ ≈ 5.67 x 10<sup>-8</sup> (Wm<sup>-2</sup>K<sup>-4</sup>) is the Stefan-Boltzmann constant,
+- σ ≈ 5.67 x 10<sup>-8</sup> (Wm<sup>-2</sup>K<sup>-4</sup>) is the [[Stefan-Boltzmann law|Stefan-Boltzmann]] constant,
 - T is the Earth's temperature (we are assuming the temperature is the same generally because this is a very simple model)
 - A = 4πR<sup>2</sup> is the surface area of the planet (a sphere)
 - ε ≈ 1 is the emissivity of the Earth (most condensed matter has pretty good [[notes/blackbody|blackbody]] properties, the **EXCEPTION** for this, which we will consider later in more complex models, is the existence of [[posts/greenhouse gases|greenhouse gases]]).  

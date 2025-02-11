@@ -5,21 +5,26 @@ tags:
   - climate
   - notebooks
 ---
-# Background
+So far, we’ve looked at the **[[ebm0d|zero-dimensional energy balance model]] (EBM)**, which treats Earth as a single, uniform entity. But the real climate system isn’t that simple—especially when it comes to **latitude**. Solar radiation varies significantly from the equator to the poles, and factors like **ice feedbacks** play a major role in shaping regional climates. To capture these variations, we need to **add a spatial dimension** to our model.
 
-There are various ways to extend and improve upon the [[ebm0d|zero-dimensional energy]] balance model (EBM). One approach is to consider the vertical dimension of the climate system, which can be achieved through a simple idealization known as the one-layer generalization of the zero-dimensional EBM that we discussed in the previously. While the incoming solar radiation exhibits symmetry with respect to longitude but significant variation with latitude, it becomes important to incorporate the latitudinal dimension to gain further insights into the climate system using a relatively simple and manageable model.
+# The One-Dimensional Energy Balance Model
 
-This leads us to the concept of the one-dimensional energy balance model. In this model, we explicitly divide the Earth into latitudinal bands while assuming uniformity with respect to longitude. By introducing latitude as a parameter, we can more realistically capture processes that exhibit strong latitudinal variations, such as ice feedbacks. Ice tends to be concentrated in higher latitude regions, and including the latitudinal component allows us to better represent these important phenomena.
+Instead of treating Earth as a single lump, we break it into **latitudinal bands**—like slicing an orange into horizontal rings. This allows us to model how energy moves **between different regions** rather than just considering a global average.
+    line-height: 2;
+In this particular version, we divide the **Northern Hemisphere** into **nine bands**, each spanning **10 degrees of latitude**. By doing so, we can study how different parts of the planet gain and lose heat, as well as how they exchange energy with their neighbors.
 
-We shall accomplish this by dividing the northern hemisphere into nine 10-degree latitude sections. The following figure depicts the general geometry:
 
 ![[ebm2.png]]
+
+
+# Heat flows: what's going in, what's going out
+
 In an energy balance model, the main goal is to account for all heat flows in and out of the system. In the model we are examining, both the solar flux and albedo vary with latitude. The solar flux is denoted by $S_i$ and the albedo is denoted by $\alpha_i$, where i ranges from 1 to 9 representing different latitude bands. The incoming heat flow for our system would be:
 
 $$
 P_{gain} = \frac{S_i(1-\alpha_i)}{4}
 $$
-According to Stefan-Boltzmann Law, the outgoing longwave radiation is:
+According to [[Stefan-Boltzmann law]], the outgoing longwave radiation is:
 
 $$
 R_i = \sigma T^4_i = A + BT_i
@@ -43,18 +48,20 @@ Therefore:
 $$
 T_i = \frac{S_i(1-\alpha_i)+k_tT_{avg}-A}{B+k_t}
 $$
-# Model parameters
+# Some Python code...
 
-- no\_latbands: The number of latitudinal bands.
-- EPSILON: A small value used to check for stable conditions in the model.
+## Model parameters & Variables
+
+%% - `no_latbands`: The number of latitudinal bands.
+- `EPSILON`: A small value used to check for stable conditions in the model.
 - A and B: Parameters for the infrared radiation formula, representing infrared cooling and a temperature-dependent term.
 - K: The diffusivity constant, which controls the rate of heat transfer among the latitudinal bands.
-- TEMP\_C1 and TEMP\_C2: Temperature thresholds for the albedo parameterization, indicating the presence or absence of ice cover.
-- ALB\_ICE\_FREE: An array representing the albedo values for each latitudinal band when there is no ice cover.
-- ALB\_ICE: The albedo value for latitudinal bands with complete ice cover.
+- TEMP_C1 and TEMP_C2: Temperature thresholds for the albedo parameterization, indicating the presence or absence of ice cover.
+- ALB_ICE_FREE: An array representing the albedo values for each latitudinal band when there is no ice cover.
+- ALB_ICE: The albedo value for latitudinal bands with complete ice cover.
 - S0: The solar constant, representing the average incoming solar radiation.
-- SOL\_FRAC: An array representing the fractional portion of the solar constant received by each latitudinal band.
--  SOL\_FLUX: The incoming solar flux at each latitudinal band, calculated by multiplying the solar constant with the corresponding fractional value.
+- SOL_FRAC: An array representing the fractional portion of the solar constant received by each latitudinal band.
+-  SOL_FLUX: The incoming solar flux at each latitudinal band, calculated by multiplying the solar constant with the corresponding fractional value. %%
 
 ```python
 no_latbands = 9                #number of latitude bands
@@ -83,12 +90,10 @@ SOL_FLUX = S0*SOL_FRAC   #incoming solar flux at each latitudinal band
 # SOL_FLUX = np.array(SOL_FLUX)
 ```
 
-# Variables
-
-- alb: An array to store the albedo value for each latitudinal band.
+%% - alb: An array to store the albedo value for each latitudinal band.
 - temp: An array to store the temperature of each latitudinal band.
-- temp\_ini and temp\_pre: Additional arrays for storing initial and previous.
-
+- temp_ini and temp_pre: Additional arrays for storing initial and previous.
+ %%
 ```python
 # Initiate zero arrays
 no_latbands
@@ -99,7 +104,7 @@ temp_ini = np.zeros(no_latbands)
 temp_pre = np.zeros(no_latbands)
 ```
 
-# Estimating surface area of each band
+## Estimating surface area of each band
 
 ```python
 band_width = 90/no_latbands                                            # number of degrees in each zone
@@ -121,9 +126,9 @@ delta_rad = (np.pi/2)/no_latbands/2                          # =====> dp/2
 lats_frac = np.sin(lats_rad + delta_rad) - np.sin(lats_rad - delta_rad)
 ```
 
-# Albedo for each band and mean albedo
+**Albedo for each band and mean albedo**
 
-The array alb is initially assigned the values of ALB\_ICE\_FREE, representing the albedo for each latitudinal band without ice cover. alb\_sum is calculated by summing the product of each albedo value and its corresponding surface area fraction. alb\_mean is obtained by dividing alb\_sum by the sum of the surface area fractions.
+The array `alb` is initially assigned the values of `ALB_ICE_FREE`, representing the `albedo` for each latitudinal band without ice cover. `alb_sum` is calculated by summing the product of each albedo value and its corresponding surface area fraction. `alb_mean` is obtained by dividing `alb_sum` by the sum of the surface area fractions.
 
 ```python
 alb = ALB_ICE_FREE
@@ -133,34 +138,34 @@ for i in range(1,no_latbands+1):
 alb_mean = alb_sum/sum(lats_frac)
 ```
 
-# Function for finding temperature
+## Function for finding temperature
 
-The code below defines a function called ebm1d (one-dimensional energy balance model) to find the equilibrium temperature for a planet with multiple latitudinal bands. 
+The code below defines a function called `ebm1d` (one-dimensional energy balance model) to find the equilibrium temperature for a planet with multiple latitudinal bands. 
 
-## Function setup
-
-- The function takes four input parameters: a, b, k, and i.
-- a, b, and k represent the parameters A, B, and K used in the energy balance equations.
-- i is a flag indicating whether the planet has ice cover (i = 1) or not (i = 0).
+%% ## Function setup
+%%
+- The function takes four input parameters: `a`, `b`, `k`, and `i`.
+- `a`, `b`, and `k` represent the parameters A, B, and K used in the energy balance equations.
+- `i` is a flag indicating whether the planet has ice cover (`i = 1`) or not (`i = 0`).%%
 - The function also includes global variables that are used within the function.
 
-## Iterative calculations
+ ## Iterative calculations
 
 - The function initializes the temp array with an initial temperature estimate based on the mean albedo and solar constant.
-- It sets up iteration parameters such as the maximum number of steps (max\_steps), the maximum temperature difference (max\_temp\_diff), and the tolerance for temperature difference (tol\_temp\_diff).
+- It sets up iteration parameters such as the maximum number of steps (max_steps), the maximum temperature difference (max_temp_diff), and the tolerance for temperature difference (tol_temp_diff).
 - It also sets the values of the global variables A, B, and K to the provided input parameters.
-
+ 
 ## Iterative loop
 
-- The code enters a while loop that continues until either the maximum number of steps is reached or the maximum temperature difference falls below the tolerance level.
-- Inside the loop, the previous temperature values are stored in temp\_pre, and the step number is incremented.
+- The code enters a `while` loop that continues until either the maximum number of steps is reached or the maximum temperature difference falls below the tolerance level.
+- Inside the loop, the previous temperature values are stored in `temp_pre`, and the step number is incremented.
 - The albedo values are calculated based on whether the planet has ice cover or not.
-	- If i = 1, indicating ice cover, all latitudinal bands are assigned the ALB\_ICE value.
-	- If i = 0, indicating no ice cover, the albedo values are determined based on the temperature thresholds TEMP\_C1 and TEMP\_C2. If the temperature of a band is below TEMP\_C2, the band is assigned the ALB\_ICE value. If the temperature is above TEMP\_C1, the band is assigned the corresponding value from the ALB\_ICE\_FREE array. For temperatures between TEMP\_C2 and TEMP\_C1, the albedo is calculated using linear interpolation.
+	- If i = 1, indicating ice cover, all latitudinal bands are assigned the ALB_ICE value.
+	- If i = 0, indicating no ice cover, the albedo values are determined based on the temperature thresholds TEMP_C1 and TEMP_C2. If the temperature of a band is below TEMP_C2, the band is assigned the ALB_ICE value. If the temperature is above TEMP_C1, the band is assigned the corresponding value from the ALB_ICE_FREE array. For temperatures between TEMP_C2 and TEMP_C1, the albedo is calculated using linear interpolation.
 - The updated albedo values are stored in the alb array.
-- The function calculates the average temperature (temp\_avg) weighted by the surface area fractions (lats\_frac).
+- The function calculates the average temperature (temp_avg) weighted by the surface area fractions (lats_frac).
 - The equilibrium temperatures for each latitudinal band are updated using the energy balance equation.
-- The maximum temperature difference between the current and previous iteration is calculated.
+- The maximum temperature difference between the current and previous iteration is calculated. %%
 
 
 ```python
@@ -221,7 +226,7 @@ def ebm1d(a,b,k,i):
     plt.grid()
     plt.show()
 ```
-By dividing the Earth into latitudinal bands, the model incorporates the latitudinal variations in factors such as solar radiation, heat transfer, and temperature gradients. This allows for a more realistic representation of climate dynamics and the study of processes like heat redistribution, energy balance, and temperature variations across different latitudes. While still a simplified model, the one-dimensional energy balance model provides a valuable tool for exploring climate phenomena and gaining a deeper understanding of the climate system.
+%% By dividing the Earth into latitudinal bands, the model incorporates the latitudinal variations in factors such as solar radiation, heat transfer, and temperature gradients. This allows for a more realistic representation of climate dynamics and the study of processes like heat redistribution, energy balance, and temperature variations across different latitudes. While still a simplified model, the one-dimensional energy balance model provides a valuable tool for exploring climate phenomena and gaining a deeper understanding of the climate system. %%
 
 With the function created above, all we have to do now is to enter the parameters A, B, K and decide whether we want to find solar flux for the case Earth is entirely covered by ice or not.
 
@@ -274,7 +279,7 @@ ebm1d(204.,2.17,3.81,0)
 
 ![[05_A-204.0_B-2.17_K-3.81_not icy.png]]
 
-With K = 3.74, the equilibrium temperatures show a similar pattern to the previous case. The highest temperature occurs at the lowest latitude (2.0 degrees) with a value of 29.99$\degree$C, while the lowest temperature is observed at the highest latitude (82.0 degrees) with a value of -13.33$\degree$C. The equilibrium albedos also increase with latitudes and remain 0.62 for the three highest latitude bands, indicating a complete ice cover there. The solar flux values decrease with increasing latitude, as in the previous case. One thing we do need to notice here is that while the solar fluxes and equilibrium albedos are the same for both values of K, there are slight changes in the values of equilibrium temperatures, where for K = 3.74, we have a wider range of temperatures compared to K = 3.81. The highest temperature of the case K = 3.74 is higher than for K = 3.81 and the lowest temperature of K = 3.74 is also lower than for K = 3.81. This difference is obviously caused by how we calculated the equilibrium temperatures using the Stefan Boltzmann law.
+%% With K = 3.74, the equilibrium temperatures show a similar pattern to the previous case. The highest temperature occurs at the lowest latitude (2.0 degrees) with a value of 29.99$\degree$C, while the lowest temperature is observed at the highest latitude (82.0 degrees) with a value of -13.33$\degree$C. The equilibrium albedos also increase with latitudes and remain 0.62 for the three highest latitude bands, indicating a complete ice cover there. The solar flux values decrease with increasing latitude, as in the previous case. One thing we do need to notice here is that while the solar fluxes and equilibrium albedos are the same for both values of K, there are slight changes in the values of equilibrium temperatures, where for K = 3.74, we have a wider range of temperatures compared to K = 3.81. The highest temperature of the case K = 3.74 is higher than for K = 3.81 and the lowest temperature of K = 3.74 is also lower than for K = 3.81. This difference is obviously caused by how we calculated the equilibrium temperatures using the [[Stefan-Boltzmann law|Stefan Boltzmann law]]. %%
 
 
 ## Different A and B values
@@ -321,7 +326,7 @@ ebm1d(212.,1.6,3.81,0)
 
 ![[05_A-212.0_B-1.6_K-3.81_not icy.png]]
 
-# Physical meanings
+%% # Understanding the parameters A and B
 
 A and B represent the parameters in the energy balance equation. A represents the infrared cooling term, and B represents the temperature-dependent term. A higher value of A indicates a stronger cooling effect, while a higher value of B indicates a higher sensitivity of temperature to changes in the radiative balance.
 
@@ -329,4 +334,4 @@ The equilibrium temperature distribution obtained from the model represents the 
 
 The equilibrium albedo distribution represents the reflection of solar radiation by the planet's surface. The albedo is influenced by the presence of ice cover, which tends to increase the reflectivity and hence the albedo.
 
-The solar flux values indicate the amount of solar radiation received by each latitudinal band. It decreases with increasing latitude due to the oblique angle of sunlight at higher latitudes.
+The solar flux values indicate the amount of solar radiation received by each latitudinal band. It decreases with increasing latitude due to the oblique angle of sunlight at higher latitudes. %%
