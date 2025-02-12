@@ -23,7 +23,7 @@ Now, if you’re wondering why there are penguins 🐧 waddling around an arbore
 You can hop between posts and notes by clicking on **[[daisyworld|links like this]]** inside each page or by using the **interactive map**. If you're on a desktop, you’ll find it on the **right side** of the page. On mobile? Scroll down, it’s waiting at the **bottom**. There are also handy buttons on the bottom right to:  
 🧭 **Open the global map** (for the adventurous)  
 🎲 **Pick a random post** (for the chaotic)  
-⬆️⬇️ **Jump to the top/bottom** (for the efficient)
+↑↓ **Jump to the top/bottom** (for the efficient)
 
 Feeling extra lost? There's a **search tool** 🔍 at the top (or just hit `Ctrl+K`) to dig through the archives.
 
@@ -33,7 +33,7 @@ Or if you just wanna see what kind of rabbit holes I’ve fallen into, here are 
 - 🌌 **#astrophysics**,
 - ⚛️ **#particle** **#physics**,
 - 🧪 **#chemistry** (more like _physical_ chemistry, really),
-- 📡 or completely random topics I’ll probably never revisit (_lol_), like **#image-processing,  #seismology,  #earthquakes**
+- ❓ or completely random topics I’ll probably never revisit (_lol_), like **#image-processing,  #seismology,  #earthquakes**
 - and [**even more stuff**](https://thdngan.github.io/arboretum/tags/)!
 
 Go ahead, click around - I promise no black holes 🕳️🐧.

@@ -14,7 +14,7 @@ Alright, let’s break it down. In thermodynamics, heat is basically energy movi
 
 At its core, heat is all about motion. Specifically, the motion of atoms. When atoms are zooming around like crazy, we experience heat. When they’re sluggish, we feel cold. You don’t actually _feel_ individual atoms moving, but when a whole bunch of them jiggle against your skin, your own atoms start jiggling faster too. If they go _way_ too fast, they can even break the chemical bonds in your skin—aka, you burn yourself. So, in a way, your fingers are like tiny atomic speedometers, constantly sensing how fast atoms are wiggling.
 
-Now, here’s where things get nerdy. Each "mode" of atomic movement holds about **½kT** of energy. Here, **T** is temperature, and **k** is Boltzmann’s constant (basically the conversion factor between energy and temperature).
+Now, here’s where things get nerdy. Each "mode" of atomic movement holds about **1/2 kT** of energy. Here, **T** is temperature, and **k** is Boltzmann’s constant (basically the conversion factor between energy and temperature).
 
 If you’ve got a gas made of single atoms, those atoms are free to move in three dimensions, so their total energy is **3/2 kT**. But molecules like oxygen (**O₂**) add an extra twist—literally. Since they’re made of two atoms, they can vibrate relative to each other, adding a whole new way to store energy. Also, because they’re shaped like tiny dumbbells rather than single points, they can rotate in space. That gives them two more energy modes. When you tally it up, an **O₂** molecule carries around **6/2 kT** of energy. More movement, more heat storage!
 
