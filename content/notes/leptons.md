@@ -5,6 +5,7 @@ tags:
   - particle
   - physics
   - notes
+  - incomplete
 ---
 A lepton is an elementary particle with spin 1/2 that does not interact strongly ([[notes/strong interactions|strong interactions]])
 
